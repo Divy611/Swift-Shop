@@ -81,7 +81,7 @@ class BannerLStyle1 extends StatelessWidget {
                   color: Colors.white70,
                   child: Text(
                     subtitle!,
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: Colors.black54,
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
@@ -102,7 +102,7 @@ class BannerLStyle1 extends StatelessWidget {
               ),
               const Spacer(),
               const Text(
-                "package:swiftshop now  >",
+                "Shop Now!",
                 style: TextStyle(
                   fontFamily: grandisExtendedFont,
                   fontSize: 12,

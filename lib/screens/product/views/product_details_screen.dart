@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:swiftshop/components/buy_full_ui_kit.dart';
+
 import 'package:swiftshop/components/cart_button.dart';
 import 'package:swiftshop/components/custom_modal_bottom_sheet.dart';
 import 'package:swiftshop/components/product/product_card.dart';
@@ -75,8 +75,7 @@ class ProductDetailsScreen extends StatelessWidget {
                 customModalBottomSheet(
                   context,
                   height: MediaQuery.of(context).size.height * 0.92,
-                  child: const BuyFullKit(
-                      images: ["assets/screens/Product detail.png"]),
+                  child: Container(),
                 );
               },
             ),
@@ -87,9 +86,7 @@ class ProductDetailsScreen extends StatelessWidget {
                 customModalBottomSheet(
                   context,
                   height: MediaQuery.of(context).size.height * 0.92,
-                  child: const BuyFullKit(
-                    images: ["assets/screens/Shipping information.png"],
-                  ),
+                  child: Container(),
                 );
               },
             ),

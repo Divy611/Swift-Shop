@@ -38,7 +38,7 @@ class AddedToCartMessageScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(context, entryPointScreenRoute);
                 },
-                child: const Text("Continue package:swiftshopping"),
+                child: const Text("Continue Shopping"),
               ),
               const SizedBox(height: defaultPadding),
               ElevatedButton(

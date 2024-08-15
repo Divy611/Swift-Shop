@@ -20,16 +20,16 @@ class _OnBordingScreenState extends State<OnBordingScreen> {
     Onbord(
       image: "assets/Illustration/Illustration-0.png",
       imageDarkTheme: "assets/Illustration/Illustration_darkTheme_0.png",
-      title: "Find the item you’ve \nbeen looking for",
+      title: "Find the item you've \nbeen looking for",
       description:
-          "Here you’ll see rich varieties of goods, carefully classified for seamless browsing experience.",
+          "Here you'll see rich varieties of goods, carefully classified for seamless browsing experience.",
     ),
     Onbord(
       image: "assets/Illustration/Illustration-1.png",
       imageDarkTheme: "assets/Illustration/Illustration_darkTheme_1.png",
-      title: "Get those package:swiftshopping \nbags filled",
+      title: "Get those shopping \nbags filled",
       description:
-          "Add any item you want to your cart, or save it on your wishlist, so you don’t miss it in your future purchases.",
+          "Add any item you want to your cart, or save it on your wishlist, so you don't miss it in your future purchases.",
     ),
     Onbord(
       image: "assets/Illustration/Illustration-2.png",
@@ -42,14 +42,14 @@ class _OnBordingScreenState extends State<OnBordingScreen> {
       imageDarkTheme: "assets/Illustration/Illustration_darkTheme_3.png",
       title: "Package tracking",
       description:
-          "In particular, package:swiftshoplon can pack your orders, and help you seamlessly manage your shipments.",
+          "In particular, SwiftShop can pack your orders, and help you seamlessly manage your shipments.",
     ),
     Onbord(
       image: "assets/Illustration/Illustration-4.png",
       imageDarkTheme: "assets/Illustration/Illustration_darkTheme_4.png",
       title: "Nearby stores",
       description:
-          "Easily track nearby package:swiftshops, browse through their items and get information about their prodcuts.",
+          "Easily track nearby shops, browse through their items and get information about their prodcuts.",
     ),
   ];
 

@@ -40,7 +40,7 @@ class BannerMStyle1 extends StatelessWidget {
               ),
               const Spacer(),
               const Text(
-                "package:swiftshop now",
+                "Shop Now!",
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w600,
