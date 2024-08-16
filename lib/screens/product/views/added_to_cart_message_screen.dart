@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:swiftshop/constants.dart';
-import 'package:swiftshop/route/screen_export.dart';
+import 'package:swiftshop/routes/screen_export.dart';
 
 class AddedToCartMessageScreen extends StatelessWidget {
   const AddedToCartMessageScreen({super.key});
@@ -20,7 +20,7 @@ class AddedToCartMessageScreen extends StatelessWidget {
                     : "assets/Illustration/success_dark.png",
                 height: MediaQuery.of(context).size.height * 0.3,
               ),
-              const Spacer(flex: 2),
+              Spacer(flex: 2),
               Text(
                 "Added to cart",
                 style: Theme.of(context)
@@ -28,24 +28,24 @@ class AddedToCartMessageScreen extends StatelessWidget {
                     .headlineSmall!
                     .copyWith(fontWeight: FontWeight.w500),
               ),
-              const SizedBox(height: defaultPadding / 2),
-              const Text(
+              SizedBox(height: defaultPadding / 2),
+              Text(
                 "Click the checkout button to complete the purchase process.",
                 textAlign: TextAlign.center,
               ),
-              const Spacer(flex: 2),
+              Spacer(flex: 2),
               OutlinedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, entryPointScreenRoute);
                 },
                 child: Text("Continue Shopping"),
               ),
-              const SizedBox(height: defaultPadding),
+              SizedBox(height: defaultPadding),
               ElevatedButton(
                 onPressed: () {},
                 child: Text("Checkout"),
               ),
-              const Spacer(),
+              Spacer(),
             ],
           ),
         ),

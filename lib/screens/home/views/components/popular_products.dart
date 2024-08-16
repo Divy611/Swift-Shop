@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:swiftshop/components/product/product_card.dart';
 import 'package:swiftshop/models/product_model.dart';
-import 'package:swiftshop/route/screen_export.dart';
+import 'package:swiftshop/routes/screen_export.dart';
 
 import '../../../../constants.dart';
 
@@ -43,7 +43,8 @@ class PopularProducts extends StatelessWidget {
                 brandName: demoPopularProducts[index].brandName,
                 title: demoPopularProducts[index].title,
                 price: demoPopularProducts[index].price,
-                priceAfetDiscount: demoPopularProducts[index].priceAfetDiscount,
+                priceAfterDiscount:
+                    demoPopularProducts[index].priceAfterDiscount,
                 dicountpercent: demoPopularProducts[index].dicountpercent,
                 press: () {
                   Navigator.pushNamed(context, productDetailsScreenRoute,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:swiftshop/route/route_constants.dart';
+import 'package:swiftshop/routes/route_constants.dart';
 
 import '/components/Banner/M/banner_m_with_counter.dart';
 import '../../../../components/product/product_card.dart';
@@ -51,8 +51,8 @@ class FlashSale extends StatelessWidget {
                 brandName: demoFlashSaleProducts[index].brandName,
                 title: demoFlashSaleProducts[index].title,
                 price: demoFlashSaleProducts[index].price,
-                priceAfetDiscount:
-                    demoFlashSaleProducts[index].priceAfetDiscount,
+                priceAfterDiscount:
+                    demoFlashSaleProducts[index].priceAfterDiscount,
                 dicountpercent: demoFlashSaleProducts[index].dicountpercent,
                 press: () {
                   Navigator.pushNamed(context, productDetailsScreenRoute,

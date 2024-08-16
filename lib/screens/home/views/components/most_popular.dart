@@ -3,7 +3,7 @@ import 'package:swiftshop/components/product/secondary_product_card.dart';
 import 'package:swiftshop/models/product_model.dart';
 
 import '../../../../constants.dart';
-import '../../../../route/route_constants.dart';
+import '../../../../routes/route_constants.dart';
 
 class MostPopular extends StatelessWidget {
   const MostPopular({
@@ -43,7 +43,8 @@ class MostPopular extends StatelessWidget {
                 brandName: demoPopularProducts[index].brandName,
                 title: demoPopularProducts[index].title,
                 price: demoPopularProducts[index].price,
-                priceAfetDiscount: demoPopularProducts[index].priceAfetDiscount,
+                priceAfterDiscount:
+                    demoPopularProducts[index].priceAfterDiscount,
                 dicountpercent: demoPopularProducts[index].dicountpercent,
                 press: () {
                   Navigator.pushNamed(context, productDetailsScreenRoute,

@@ -63,8 +63,7 @@ class _BannerMWithCounterState extends State<BannerMWithCounter> {
                 fontWeight: FontWeight.w500,
                 color: Colors.white,
               ),
-            ),
-            const SizedBox(height: defaultPadding),
+            ), SizedBox(height: defaultPadding),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

@@ -6,111 +6,111 @@ Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case onbordingScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const OnBordingScreen(),
+        builder: (context) => OnBordingScreen(),
       );
     case logInScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const LoginScreen(),
+        builder: (context) => LoginScreen(),
       );
     case signUpScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const SignUpScreen(),
+        builder: (context) => SignUpScreen(),
       );
     case passwordRecoveryScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const PasswordRecoveryScreen(),
+        builder: (context) => PasswordRecoveryScreen(),
       );
-    case productDetailsScreenRoute:
-      return MaterialPageRoute(
-        builder: (context) {
-          bool isProductAvailable = settings.arguments as bool? ?? true;
-          return ProductDetailsScreen(isProductAvailable: isProductAvailable);
-        },
-      );
+    //case productDetailsScreenRoute:
+    //  return MaterialPageRoute(
+    //    builder: (context) {
+    //      bool isProductAvailable = settings.arguments as bool? ?? true;
+    //      return ProductDetailsScreen(isProductAvailable: isProductAvailable);
+    //    },
+    //  );
     case productReviewsScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const ProductReviewsScreen(),
+        builder: (context) => ProductReviewsScreen(),
       );
     case homeScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const HomeScreen(),
+        builder: (context) => HomeScreen(),
       );
     case discoverScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const DiscoverScreen(),
+        builder: (context) => DiscoverScreen(),
       );
     case onSaleScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const OnSaleScreen(),
+        builder: (context) => OnSaleScreen(),
       );
     case kidsScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const KidsScreen(),
+        builder: (context) => KidsScreen(),
       );
     case searchScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const SearchScreen(),
+        builder: (context) => SearchScreen(),
       );
     case bookmarkScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const BookmarkScreen(),
+        builder: (context) => BookmarkScreen(),
       );
     case entryPointScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const EntryPoint(),
+        builder: (context) => EntryPoint(),
       );
     case profileScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const ProfileScreen(),
+        builder: (context) => ProfileScreen(),
       );
     case userInfoScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const UserInfoScreen(),
+        builder: (context) => UserInfoScreen(),
       );
     case notificationsScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const NotificationsScreen(),
+        builder: (context) => NotificationsScreen(),
       );
     case noNotificationScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const NoNotificationScreen(),
+        builder: (context) => NoNotificationScreen(),
       );
     case enableNotificationScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const EnableNotificationScreen(),
+        builder: (context) => EnableNotificationScreen(),
       );
     case notificationOptionsScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const NotificationOptionsScreen(),
+        builder: (context) => NotificationOptionsScreen(),
       );
     case addressesScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const AddressesScreen(),
+        builder: (context) => AddressesScreen(),
       );
     case ordersScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const OrdersScreen(),
+        builder: (context) => OrdersScreen(),
       );
     case preferencesScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const PreferencesScreen(),
+        builder: (context) => PreferencesScreen(),
       );
     case emptyWalletScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const EmptyWalletScreen(),
+        builder: (context) => EmptyWalletScreen(),
       );
     case walletScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const WalletScreen(),
+        builder: (context) => WalletScreen(),
       );
     case cartScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const CartScreen(),
+        builder: (context) => CartScreen(),
       );
     default:
       return MaterialPageRoute(
         // Make a screen for undefine
-        builder: (context) => const OnBordingScreen(),
+        builder: (context) => OnBordingScreen(),
       );
   }
 }

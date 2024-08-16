@@ -22,12 +22,12 @@ class BannerMWithCounterSkelton extends StatelessWidget {
                 width: 200,
                 height: 24,
               ),
-              const SizedBox(height: defaultPadding / 2),
-              const Skeleton(
+              SizedBox(height: defaultPadding / 2),
+              Skeleton(
                 width: 160,
                 height: 24,
               ),
-              const SizedBox(height: defaultPadding),
+              SizedBox(height: defaultPadding),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: List.generate(

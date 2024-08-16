@@ -32,19 +32,19 @@ class ProductInfo extends StatelessWidget {
               brand.toUpperCase(),
               style: TextStyle(fontWeight: FontWeight.w500),
             ),
-            const SizedBox(height: defaultPadding / 2),
+            SizedBox(height: defaultPadding / 2),
             Text(
               title,
               maxLines: 2,
               style: Theme.of(context).textTheme.titleLarge,
             ),
-            const SizedBox(height: defaultPadding),
+            SizedBox(height: defaultPadding),
             Row(
               children: [
                 ProductAvailabilityTag(isAvailable: isAvailable),
-                const Spacer(),
+                Spacer(),
                 SvgPicture.asset("assets/icons/Star_filled.svg"),
-                const SizedBox(width: defaultPadding / 4),
+                SizedBox(width: defaultPadding / 4),
                 Text(
                   "$rating ",
                   style: Theme.of(context).textTheme.bodyLarge,
@@ -52,7 +52,7 @@ class ProductInfo extends StatelessWidget {
                 Text("($numOfReviews Reviews)")
               ],
             ),
-            const SizedBox(height: defaultPadding),
+            SizedBox(height: defaultPadding),
             Text(
               "Product info",
               style: Theme.of(context)
@@ -60,12 +60,12 @@ class ProductInfo extends StatelessWidget {
                   .titleMedium!
                   .copyWith(fontWeight: FontWeight.w500),
             ),
-            const SizedBox(height: defaultPadding / 2),
+            SizedBox(height: defaultPadding / 2),
             Text(
               description,
               style: TextStyle(height: 1.4),
             ),
-            const SizedBox(height: defaultPadding / 2),
+            SizedBox(height: defaultPadding / 2),
           ],
         ),
       ),

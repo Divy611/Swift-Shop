@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:swiftshop/constants.dart';
-import 'package:swiftshop/route/route_constants.dart';
+import 'package:swiftshop/routes/route_constants.dart';
 
 import 'components/login_form.dart';
 
@@ -35,11 +35,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     "Welcome back!",
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
-                  const SizedBox(height: defaultPadding / 2),
-                  const Text(
+                  SizedBox(height: defaultPadding / 2),
+                  Text(
                     "Log in with your data that you intered during your registration.",
                   ),
-                  const SizedBox(height: defaultPadding),
+                  SizedBox(height: defaultPadding),
                   LogInForm(formKey: _formKey),
                   Align(
                     child: TextButton(

@@ -22,19 +22,19 @@ class EmptyWalletScreen extends StatelessWidget {
                 onTabChargeBalance: () {},
               ),
             ),
-            const Spacer(flex: 2),
+            Spacer(flex: 2),
             Image.asset(
               Theme.of(context).brightness == Brightness.light
                   ? "assets/Illustration/EmptyState_lightTheme.png"
                   : "assets/Illustration/EmptyState_darkTheme.png",
               width: MediaQuery.of(context).size.width * 0.5,
             ),
-            const Spacer(),
+            Spacer(),
             Text(
               "Empty wallet history",
               style: Theme.of(context).textTheme.titleLarge,
             ),
-            const Padding(
+            Padding(
               padding: EdgeInsets.symmetric(
                   horizontal: defaultPadding * 1.5, vertical: defaultPadding),
               child: Text(
@@ -42,7 +42,7 @@ class EmptyWalletScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-            const Spacer(flex: 2),
+            Spacer(flex: 2),
           ],
         ),
       ),

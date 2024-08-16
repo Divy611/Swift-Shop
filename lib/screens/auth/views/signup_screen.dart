@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:swiftshop/screens/auth/views/components/sign_up_form.dart';
-import 'package:swiftshop/route/route_constants.dart';
+import 'package:swiftshop/routes/route_constants.dart';
 
 import '../../../constants.dart';
 
@@ -42,7 +42,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                   SizedBox(height: defaultPadding),
                   SignUpForm(formKey: _formKey),
-                  const SizedBox(height: defaultPadding),
+                  SizedBox(height: defaultPadding),
                   Row(
                     children: [
                       Checkbox(
@@ -75,7 +75,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       )
                     ],
                   ),
-                  const SizedBox(height: defaultPadding * 2),
+                  SizedBox(height: defaultPadding * 2),
                   ElevatedButton(
                     onPressed: () {
                       Navigator.pushNamed(context, entryPointScreenRoute);

@@ -10,14 +10,14 @@ class SecondaryProductCard extends StatelessWidget {
     required this.brandName,
     required this.title,
     required this.price,
-    this.priceAfetDiscount,
+    this.priceAfterDiscount,
     this.dicountpercent,
     this.press,
     this.style,
   });
   final String image, brandName, title;
   final double price;
-  final double? priceAfetDiscount;
+  final double? priceAfterDiscount;
   final int? dicountpercent;
   final VoidCallback? press;
 
@@ -64,7 +64,7 @@ class SecondaryProductCard extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(width: defaultPadding / 4),
+          SizedBox(width: defaultPadding / 4),
           Expanded(
             child: Padding(
               padding: EdgeInsets.all(defaultPadding / 2),
@@ -78,7 +78,7 @@ class SecondaryProductCard extends StatelessWidget {
                         .bodyMedium!
                         .copyWith(fontSize: 10),
                   ),
-                  const SizedBox(height: defaultPadding / 2),
+                  SizedBox(height: defaultPadding / 2),
                   Text(
                     title,
                     maxLines: 2,
@@ -88,19 +88,19 @@ class SecondaryProductCard extends StatelessWidget {
                         .titleSmall!
                         .copyWith(fontSize: 12),
                   ),
-                  const Spacer(),
-                  priceAfetDiscount != null
+                  Spacer(),
+                  priceAfterDiscount != null
                       ? Row(
                           children: [
                             Text(
-                              "\$$priceAfetDiscount",
+                              "\$$priceAfterDiscount",
                               style: TextStyle(
                                 color: Color(0xFF31B0D8),
                                 fontWeight: FontWeight.w500,
                                 fontSize: 12,
                               ),
                             ),
-                            const SizedBox(width: defaultPadding / 4),
+                            SizedBox(width: defaultPadding / 4),
                             Text(
                               "\$$price",
                               style: TextStyle(

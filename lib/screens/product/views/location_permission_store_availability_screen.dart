@@ -28,7 +28,7 @@ class LocationPermissonStoreAvailabilityScreen extends StatelessWidget {
                     "Store Pickup Availability",
                     style: Theme.of(context).textTheme.titleSmall,
                   ),
-                  const SizedBox(width: 40),
+                  SizedBox(width: 40),
                 ],
               ),
             ),

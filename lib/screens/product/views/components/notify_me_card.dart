@@ -53,7 +53,7 @@ class NotifyMeCard extends StatelessWidget {
                     child: SvgPicture.asset("assets/icons/Notification.svg"),
                   ),
                 ),
-                const SizedBox(width: defaultPadding),
+                SizedBox(width: defaultPadding),
                 Expanded(
                   child: Text(
                     "Notify when product back to stock.",

@@ -59,7 +59,7 @@ class BannerMStyle2 extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(width: defaultPadding),
+              SizedBox(width: defaultPadding),
               SizedBox(
                 height: 48,
                 width: 48,

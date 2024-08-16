@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:swiftshop/route/screen_export.dart';
+import 'package:swiftshop/routes/screen_export.dart';
 
 import '../../../../constants.dart';
 

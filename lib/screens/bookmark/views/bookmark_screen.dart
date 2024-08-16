@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
-import 'package:swiftshop/components/product/product_card.dart';
-import 'package:swiftshop/models/product_model.dart';
-import 'package:swiftshop/route/route_constants.dart';
-
 import '../../../constants.dart';
+import 'package:flutter/material.dart';
+import 'package:swiftshop/routes/screen_export.dart';
+import 'package:swiftshop/models/product_model.dart';
+//import 'package:swiftshop/routes/route_constants.dart';
+import 'package:swiftshop/components/product/product_card.dart';
 
 class BookmarkScreen extends StatelessWidget {
   const BookmarkScreen({super.key});
@@ -13,8 +13,7 @@ class BookmarkScreen extends StatelessWidget {
     return Scaffold(
       body: CustomScrollView(
         slivers: [
-          // While loading use 👇
-          //  BookMarksSlelton(),
+          //BookMarksSlelton(),
           SliverPadding(
             padding: EdgeInsets.symmetric(
                 horizontal: defaultPadding, vertical: defaultPadding),
@@ -32,11 +31,21 @@ class BookmarkScreen extends StatelessWidget {
                     brandName: demoPopularProducts[index].brandName,
                     title: demoPopularProducts[index].title,
                     price: demoPopularProducts[index].price,
-                    priceAfetDiscount:
-                        demoPopularProducts[index].priceAfetDiscount,
+                    priceAfterDiscount:
+                        demoPopularProducts[index].priceAfterDiscount,
                     dicountpercent: demoPopularProducts[index].dicountpercent,
                     press: () {
-                      Navigator.pushNamed(context, productDetailsScreenRoute);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ProductDetailsScreen(
+                            image: demoPopularProducts[index].image,
+                            title: demoPopularProducts[index].title,
+                            price: demoPopularProducts[index].price,
+                            brandName: demoPopularProducts[index].brandName,
+                          ),
+                        ),
+                      );
                     },
                   );
                 },

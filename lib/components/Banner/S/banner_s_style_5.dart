@@ -76,7 +76,7 @@ class BannerSStyle5 extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(width: defaultPadding),
+              SizedBox(width: defaultPadding),
               SvgPicture.asset(
                 "assets/icons/miniRight.svg",
                 height: 28,

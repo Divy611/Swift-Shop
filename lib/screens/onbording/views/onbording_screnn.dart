@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:swiftshop/components/dot_indicators.dart';
 import 'package:swiftshop/constants.dart';
-import 'package:swiftshop/route/route_constants.dart';
+import 'package:swiftshop/routes/route_constants.dart';
 
 import 'components/onbording_content.dart';
 
@@ -115,7 +115,7 @@ class _OnBordingScreenState extends State<OnBordingScreen> {
                       child: DotIndicator(isActive: index == _pageIndex),
                     ),
                   ),
-                  const Spacer(),
+                  Spacer(),
                   SizedBox(
                     height: 60,
                     width: 60,
@@ -142,7 +142,7 @@ class _OnBordingScreenState extends State<OnBordingScreen> {
                   ),
                 ],
               ),
-              const SizedBox(height: defaultPadding),
+              SizedBox(height: defaultPadding),
             ],
           ),
         ),

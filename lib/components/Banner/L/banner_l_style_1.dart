@@ -87,8 +87,7 @@ class BannerLStyle1 extends StatelessWidget {
                       fontSize: 16,
                     ),
                   ),
-                ),
-              const SizedBox(height: defaultPadding),
+                ), SizedBox(height: defaultPadding),
               Text(
                 title.toUpperCase(),
                 textAlign: TextAlign.center,
@@ -99,9 +98,7 @@ class BannerLStyle1 extends StatelessWidget {
                   color: Colors.white,
                   height: 1,
                 ),
-              ),
-              const Spacer(),
-              const Text(
+              ), Spacer(), Text(
                 "Shop Now!",
                 style: TextStyle(
                   fontFamily: grandisExtendedFont,
@@ -109,8 +106,7 @@ class BannerLStyle1 extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                   color: Colors.white,
                 ),
-              ),
-              const Spacer(),
+              ), Spacer(),
             ],
           ),
         ),

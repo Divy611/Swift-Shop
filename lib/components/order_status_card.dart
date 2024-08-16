@@ -86,7 +86,7 @@ class OrderStatusCard extends StatelessWidget {
                     ],
                   ),
                 ),
-                const Divider(height: 1),
+                Divider(height: 1),
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: defaultPadding),
                   child: OrderProgress(

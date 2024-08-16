@@ -3,7 +3,7 @@ import '../constants.dart';
 class ProductModel {
   final String image, brandName, title;
   final double price;
-  final double? priceAfetDiscount;
+  final double? priceAfterDiscount;
   final int? dicountpercent;
 
   ProductModel({
@@ -11,7 +11,7 @@ class ProductModel {
     required this.brandName,
     required this.title,
     required this.price,
-    this.priceAfetDiscount,
+    this.priceAfterDiscount,
     this.dicountpercent,
   });
 }
@@ -22,7 +22,7 @@ List<ProductModel> demoPopularProducts = [
     title: "Mountain Warehouse for Women",
     brandName: "Lipsy london",
     price: 540,
-    priceAfetDiscount: 420,
+    priceAfterDiscount: 420,
     dicountpercent: 20,
   ),
   ProductModel(
@@ -36,7 +36,7 @@ List<ProductModel> demoPopularProducts = [
     title: "FS - Nike Air Max 270 Really React",
     brandName: "Lipsy london",
     price: 650.62,
-    priceAfetDiscount: 390.36,
+    priceAfterDiscount: 390.36,
     dicountpercent: 40,
   ),
   ProductModel(
@@ -44,7 +44,7 @@ List<ProductModel> demoPopularProducts = [
     title: "Green Poplin Ruched Front",
     brandName: "Lipsy london",
     price: 1264,
-    priceAfetDiscount: 1200.8,
+    priceAfterDiscount: 1200.8,
     dicountpercent: 5,
   ),
   ProductModel(
@@ -52,7 +52,7 @@ List<ProductModel> demoPopularProducts = [
     title: "Green Poplin Ruched Front",
     brandName: "Lipsy london",
     price: 650.62,
-    priceAfetDiscount: 390.36,
+    priceAfterDiscount: 390.36,
     dicountpercent: 40,
   ),
   ProductModel(
@@ -60,7 +60,7 @@ List<ProductModel> demoPopularProducts = [
     title: "white satin corset top",
     brandName: "Lipsy london",
     price: 1264,
-    priceAfetDiscount: 1200.8,
+    priceAfterDiscount: 1200.8,
     dicountpercent: 5,
   ),
 ];
@@ -70,7 +70,7 @@ List<ProductModel> demoFlashSaleProducts = [
     title: "FS - Nike Air Max 270 Really React",
     brandName: "Lipsy london",
     price: 650.62,
-    priceAfetDiscount: 390.36,
+    priceAfterDiscount: 390.36,
     dicountpercent: 40,
   ),
   ProductModel(
@@ -78,7 +78,7 @@ List<ProductModel> demoFlashSaleProducts = [
     title: "Green Poplin Ruched Front",
     brandName: "Lipsy london",
     price: 1264,
-    priceAfetDiscount: 1200.8,
+    priceAfterDiscount: 1200.8,
     dicountpercent: 5,
   ),
   ProductModel(
@@ -86,7 +86,7 @@ List<ProductModel> demoFlashSaleProducts = [
     title: "Mountain Beta Warehouse",
     brandName: "Lipsy london",
     price: 800,
-    priceAfetDiscount: 680,
+    priceAfterDiscount: 680,
     dicountpercent: 15,
   ),
 ];
@@ -96,7 +96,7 @@ List<ProductModel> demoBestSellersProducts = [
     title: "Green Poplin Ruched Front",
     brandName: "Lipsy london",
     price: 650.62,
-    priceAfetDiscount: 390.36,
+    priceAfterDiscount: 390.36,
     dicountpercent: 40,
   ),
   ProductModel(
@@ -104,7 +104,7 @@ List<ProductModel> demoBestSellersProducts = [
     title: "white satin corset top",
     brandName: "Lipsy london",
     price: 1264,
-    priceAfetDiscount: 1200.8,
+    priceAfterDiscount: 1200.8,
     dicountpercent: 5,
   ),
   ProductModel(
@@ -112,7 +112,7 @@ List<ProductModel> demoBestSellersProducts = [
     title: "Mountain Beta Warehouse",
     brandName: "Lipsy london",
     price: 800,
-    priceAfetDiscount: 680,
+    priceAfterDiscount: 680,
     dicountpercent: 15,
   ),
 ];
@@ -122,7 +122,7 @@ List<ProductModel> kidsProducts = [
     title: "Green Poplin Ruched Front",
     brandName: "Lipsy london",
     price: 650.62,
-    priceAfetDiscount: 590.36,
+    priceAfterDiscount: 590.36,
     dicountpercent: 24,
   ),
   ProductModel(
@@ -142,7 +142,7 @@ List<ProductModel> kidsProducts = [
     title: "Green Mountain Beta Warehouse",
     brandName: "Lipsy london",
     price: 400,
-    priceAfetDiscount: 360,
+    priceAfterDiscount: 360,
     dicountpercent: 20,
   ),
   ProductModel(

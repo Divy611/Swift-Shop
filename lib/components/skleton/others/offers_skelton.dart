@@ -15,7 +15,7 @@ class OffersSkelton extends StatelessWidget {
       child: Stack(
         children: [
           const Skeleton(),
-          const Positioned.fill(
+          Positioned.fill(
             left: defaultPadding,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

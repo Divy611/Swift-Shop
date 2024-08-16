@@ -56,7 +56,7 @@ class ReviewCard extends StatelessWidget {
                   ),
                 ),
                 Text("Based on $numOfReviews Reviews"),
-                const SizedBox(height: defaultPadding),
+                SizedBox(height: defaultPadding),
                 RatingBar.builder(
                   initialRating: rating,
                   itemSize: 20,
@@ -76,7 +76,7 @@ class ReviewCard extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(width: defaultPadding),
+          SizedBox(width: defaultPadding),
           Expanded(
             child: Column(
               children: [
@@ -118,7 +118,7 @@ class RateBar extends StatelessWidget {
                   color: Theme.of(context).textTheme.bodyMedium!.color),
             ),
           ),
-          const SizedBox(width: defaultPadding / 2),
+          SizedBox(width: defaultPadding / 2),
           Expanded(
             child: ClipRRect(
               borderRadius: BorderRadius.all(

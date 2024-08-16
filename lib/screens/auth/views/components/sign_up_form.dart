@@ -45,7 +45,7 @@ class SignUpForm extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: defaultPadding),
+          SizedBox(height: defaultPadding),
           TextFormField(
             onSaved: (pass) {
               // Password

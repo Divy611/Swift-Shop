@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
-
 import '../../constants.dart';
+import 'package:flutter/material.dart';
 import '../network_image_with_loader.dart';
 
 class ProductCard extends StatelessWidget {
@@ -10,24 +9,25 @@ class ProductCard extends StatelessWidget {
     required this.brandName,
     required this.title,
     required this.price,
-    this.priceAfetDiscount,
+    this.priceAfterDiscount,
     this.dicountpercent,
     required this.press,
   });
-  final String image, brandName, title;
   final double price;
-  final double? priceAfetDiscount;
-  final int? dicountpercent;
   final VoidCallback press;
+  final int? dicountpercent;
+  final double? priceAfterDiscount;
+  final String image, brandName, title;
 
   @override
   Widget build(BuildContext context) {
     return OutlinedButton(
       onPressed: press,
       style: OutlinedButton.styleFrom(
-          minimumSize: Size(140, 220),
-          maximumSize: Size(140, 220),
-          padding: EdgeInsets.all(8)),
+        padding: EdgeInsets.all(8),
+        minimumSize: Size(140, 220),
+        maximumSize: Size(140, 220),
+      ),
       child: Column(
         children: [
           AspectRatio(
@@ -40,20 +40,23 @@ class ProductCard extends StatelessWidget {
                     right: defaultPadding / 2,
                     top: defaultPadding / 2,
                     child: Container(
-                      padding:
-                          EdgeInsets.symmetric(horizontal: defaultPadding / 2),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: defaultPadding / 2,
+                      ),
                       height: 16,
                       decoration: BoxDecoration(
                         color: errorColor,
                         borderRadius: BorderRadius.all(
-                            Radius.circular(defaultBorderRadious)),
+                          Radius.circular(defaultBorderRadious),
+                        ),
                       ),
                       child: Text(
                         "$dicountpercent% off",
                         style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 10,
-                            fontWeight: FontWeight.w500),
+                          color: Colors.white,
+                          fontSize: 10,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ),
                   )
@@ -63,7 +66,9 @@ class ProductCard extends StatelessWidget {
           Expanded(
             child: Padding(
               padding: EdgeInsets.symmetric(
-                  horizontal: defaultPadding / 2, vertical: defaultPadding / 2),
+                horizontal: defaultPadding / 2,
+                vertical: defaultPadding / 2,
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -74,7 +79,7 @@ class ProductCard extends StatelessWidget {
                         .bodyMedium!
                         .copyWith(fontSize: 10),
                   ),
-                  const SizedBox(height: defaultPadding / 2),
+                  SizedBox(height: defaultPadding / 2),
                   Text(
                     title,
                     maxLines: 2,
@@ -84,19 +89,19 @@ class ProductCard extends StatelessWidget {
                         .titleSmall!
                         .copyWith(fontSize: 12),
                   ),
-                  const Spacer(),
-                  priceAfetDiscount != null
+                  Spacer(),
+                  priceAfterDiscount != null
                       ? Row(
                           children: [
                             Text(
-                              "\$$priceAfetDiscount",
+                              "\$$priceAfterDiscount",
                               style: TextStyle(
                                 color: Color(0xFF31B0D8),
                                 fontWeight: FontWeight.w500,
-                                fontSize: 12,
+                                fontSize: 13,
                               ),
                             ),
-                            const SizedBox(width: defaultPadding / 4),
+                            SizedBox(width: defaultPadding / 4),
                             Text(
                               "\$$price",
                               style: TextStyle(

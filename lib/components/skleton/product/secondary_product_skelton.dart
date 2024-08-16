@@ -25,7 +25,7 @@ class SeconderyProductSkelton extends StatelessWidget {
             aspectRatio: 1.15,
             child: Skeleton(),
           ),
-          const SizedBox(width: defaultPadding / 2),
+          SizedBox(width: defaultPadding / 2),
           Expanded(
             child: Padding(
               padding: EdgeInsets.symmetric(vertical: defaultPadding / 2),
@@ -36,12 +36,12 @@ class SeconderyProductSkelton extends StatelessWidget {
                     height: 12,
                     width: 80,
                   ),
-                  const Spacer(),
-                  const Skeleton(),
+                  Spacer(),
+                  Skeleton(),
                   if (!isSmall) const SizedBox(height: defaultPadding / 2),
                   if (!isSmall) const Skeleton(),
-                  const Spacer(),
-                  const Skeleton(
+                  Spacer(),
+                  Skeleton(
                     width: 40,
                     height: 12,
                   ),

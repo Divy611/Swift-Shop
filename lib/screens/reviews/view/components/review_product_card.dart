@@ -31,7 +31,7 @@ class ReviewProductInfoCard extends StatelessWidget {
                 style:
                     const TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
               ),
-              const SizedBox(height: defaultPadding / 2),
+              SizedBox(height: defaultPadding / 2),
               Text(
                 title,
                 style: TextStyle(

@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:swiftshop/components/list_tile/divider_list_tile.dart';
 import 'package:swiftshop/components/network_image_with_loader.dart';
 import 'package:swiftshop/constants.dart';
-import 'package:swiftshop/route/screen_export.dart';
+import 'package:swiftshop/routes/screen_export.dart';
 
 import 'components/profile_card.dart';
 import 'components/profile_menu_item_list_tile.dart';
@@ -46,7 +46,7 @@ class ProfileScreen extends StatelessWidget {
               style: Theme.of(context).textTheme.titleSmall,
             ),
           ),
-          const SizedBox(height: defaultPadding / 2),
+          SizedBox(height: defaultPadding / 2),
           ProfileMenuListTile(
             text: "Orders",
             svgSrc: "assets/icons/Order.svg",
@@ -85,7 +85,7 @@ class ProfileScreen extends StatelessWidget {
               Navigator.pushNamed(context, walletScreenRoute);
             },
           ),
-          const SizedBox(height: defaultPadding),
+          SizedBox(height: defaultPadding),
           Padding(
             padding: EdgeInsets.symmetric(
                 horizontal: defaultPadding, vertical: defaultPadding / 2),
@@ -109,7 +109,7 @@ class ProfileScreen extends StatelessWidget {
               Navigator.pushNamed(context, preferencesScreenRoute);
             },
           ),
-          const SizedBox(height: defaultPadding),
+          SizedBox(height: defaultPadding),
           Padding(
             padding: EdgeInsets.symmetric(
                 horizontal: defaultPadding, vertical: defaultPadding / 2),
@@ -130,7 +130,7 @@ class ProfileScreen extends StatelessWidget {
             svgSrc: "assets/icons/Location.svg",
             press: () {},
           ),
-          const SizedBox(height: defaultPadding),
+          SizedBox(height: defaultPadding),
           Padding(
             padding: EdgeInsets.symmetric(
                 horizontal: defaultPadding, vertical: defaultPadding / 2),
@@ -152,7 +152,7 @@ class ProfileScreen extends StatelessWidget {
             press: () {},
             isShowDivider: false,
           ),
-          const SizedBox(height: defaultPadding),
+          SizedBox(height: defaultPadding),
 
           // Log Out
           ListTile(

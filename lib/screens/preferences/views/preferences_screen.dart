@@ -29,7 +29,7 @@ class PreferencesScreen extends StatelessWidget {
               isActive: true,
               press: () {},
             ),
-            const Divider(height: defaultPadding * 2),
+            Divider(height: defaultPadding * 2),
             PreferencesListTile(
               titleText: "Personalization",
               subtitleTxt:
@@ -37,7 +37,7 @@ class PreferencesScreen extends StatelessWidget {
               isActive: false,
               press: () {},
             ),
-            const Divider(height: defaultPadding * 2),
+            Divider(height: defaultPadding * 2),
             PreferencesListTile(
               titleText: "Marketing",
               subtitleTxt:
@@ -45,7 +45,7 @@ class PreferencesScreen extends StatelessWidget {
               isActive: false,
               press: () {},
             ),
-            const Divider(height: defaultPadding * 2),
+            Divider(height: defaultPadding * 2),
             PreferencesListTile(
               titleText: "Social media cookies",
               subtitleTxt:

@@ -1,6 +1,6 @@
 import 'theme/app_theme.dart';
-import 'route/route_constants.dart';
-import 'route/router.dart' as router;
+import 'routes/route_constants.dart';
+import 'routes/router.dart' as router;
 import 'package:flutter/material.dart';
 
 void main() {
