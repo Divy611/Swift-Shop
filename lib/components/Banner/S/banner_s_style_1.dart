@@ -46,7 +46,7 @@ class BannerSStyle1 extends StatelessWidget {
                         height: 1,
                       ),
                     ),
-                    const SizedBox(height: defaultPadding / 4),
+                    SizedBox(height: defaultPadding / 4),
                     if (subtitle != null)
                       Text(
                         subtitle!.toUpperCase(),

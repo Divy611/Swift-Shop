@@ -10,7 +10,7 @@ class ProductCardSkelton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SizedBox(
+    return SizedBox(
       height: 220,
       width: 140,
       child: Padding(

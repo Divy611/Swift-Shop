@@ -78,7 +78,7 @@ class CardInfo extends StatelessWidget {
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500),
                           ),
-                          const SizedBox(height: defaultPadding),
+                          SizedBox(height: defaultPadding),
                         ],
                       ),
                     ),
@@ -104,7 +104,7 @@ class CardInfo extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(name),
-                                const SizedBox(height: defaultPadding / 4),
+                                SizedBox(height: defaultPadding / 4),
                                 Text(expiryDate)
                               ],
                             ),
@@ -117,7 +117,7 @@ class CardInfo extends StatelessWidget {
               ),
             ),
           ),
-          if (isSelected) const SizedBox(height: defaultPadding),
+          if (isSelected) SizedBox(height: defaultPadding),
           if (isSelected)
             Form(
               child: TextFormField(
@@ -149,7 +149,7 @@ class CardInfo extends StatelessWidget {
                 ),
               ),
             ),
-          if (isSelected) const SizedBox(height: defaultPadding / 2),
+          if (isSelected) SizedBox(height: defaultPadding / 2),
         ],
       ),
     );

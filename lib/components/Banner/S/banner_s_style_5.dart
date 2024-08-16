@@ -51,7 +51,7 @@ class BannerSStyle5 extends StatelessWidget {
                           ),
                         ),
                       ),
-                    const SizedBox(height: defaultPadding / 2),
+                    SizedBox(height: defaultPadding / 2),
                     Text(
                       title.toUpperCase(),
                       style: TextStyle(
@@ -62,7 +62,7 @@ class BannerSStyle5 extends StatelessWidget {
                         height: 1,
                       ),
                     ),
-                    // const SizedBox(height: defaultPadding / 4),
+                    // SizedBox(height: defaultPadding / 4),
                     if (bottomText != null)
                       Text(
                         bottomText!,

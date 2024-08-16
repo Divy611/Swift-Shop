@@ -23,7 +23,7 @@ class FlashSale extends StatelessWidget {
           text: "Super Flash Sale \n50% Off",
           press: () {},
         ),
-        const SizedBox(height: defaultPadding / 2),
+        SizedBox(height: defaultPadding / 2),
         Padding(
           padding: EdgeInsets.all(defaultPadding),
           child: Text(
@@ -53,7 +53,7 @@ class FlashSale extends StatelessWidget {
                 price: demoFlashSaleProducts[index].price,
                 priceAfterDiscount:
                     demoFlashSaleProducts[index].priceAfterDiscount,
-                dicountpercent: demoFlashSaleProducts[index].dicountpercent,
+                discountpercent: demoFlashSaleProducts[index].discountpercent,
                 press: () {
                   Navigator.pushNamed(context, productDetailsScreenRoute,
                       arguments: index.isEven);

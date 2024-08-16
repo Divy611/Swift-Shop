@@ -22,8 +22,8 @@ List<CategoryModel> demoCategories = [
       name: "On Sale",
       svgSrc: "assets/icons/Sale.svg",
       route: onSaleScreenRoute),
-  CategoryModel(name: "Man's", svgSrc: "assets/icons/Man.svg"),
-  CategoryModel(name: "Woman’s", svgSrc: "assets/icons/Woman.svg"),
+  CategoryModel(name: "Men", svgSrc: "assets/icons/Man.svg"),
+  CategoryModel(name: "Women", svgSrc: "assets/icons/Woman.svg"),
   CategoryModel(
       name: "Kids", svgSrc: "assets/icons/Child.svg", route: kidsScreenRoute),
 ];
@@ -106,7 +106,7 @@ class CategoryBtn extends StatelessWidget {
                   BlendMode.srcIn,
                 ),
               ),
-            if (svgSrc != null) const SizedBox(width: defaultPadding / 2),
+            if (svgSrc != null) SizedBox(width: defaultPadding / 2),
             Text(
               category,
               style: TextStyle(

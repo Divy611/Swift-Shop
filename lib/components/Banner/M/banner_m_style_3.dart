@@ -49,7 +49,7 @@ class BannerMStyle3 extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(height: defaultPadding / 2),
+                    SizedBox(height: defaultPadding / 2),
                     Text(
                       title.toUpperCase(),
                       style: TextStyle(

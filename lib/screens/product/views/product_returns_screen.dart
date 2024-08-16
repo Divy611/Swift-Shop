@@ -11,14 +11,13 @@ class ProductReturnsScreen extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            const SizedBox(height: defaultPadding),
+            SizedBox(height: defaultPadding),
             Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
+              padding: EdgeInsets.symmetric(horizontal: defaultPadding / 2),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const SizedBox(
+                  SizedBox(
                     width: 40,
                     child: BackButton(),
                   ),

@@ -13,14 +13,13 @@ class LocationPermissonStoreAvailabilityScreen extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            const SizedBox(height: defaultPadding),
+            SizedBox(height: defaultPadding),
             Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
+              padding: EdgeInsets.symmetric(horizontal: defaultPadding / 2),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const SizedBox(
+                  SizedBox(
                     width: 40,
                     child: BackButton(),
                   ),
@@ -75,11 +74,11 @@ class LocationPermissonStoreAvailabilityScreen extends StatelessWidget {
                           fontWeight: FontWeight.w500,
                           color: Theme.of(context).textTheme.bodyLarge!.color),
                     ),
-                    const SizedBox(height: defaultPadding),
+                    SizedBox(height: defaultPadding),
                     const Text(
                       "Turn on Location Services in your device Settings to search for stores by current location. You can still search by Country/Region, City or Zip Code.",
                     ),
-                    const SizedBox(height: defaultPadding * 1.5),
+                    SizedBox(height: defaultPadding * 1.5),
                     ElevatedButton(
                       onPressed: () {},
                       child: Text("Settings"),

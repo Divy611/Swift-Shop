@@ -21,7 +21,7 @@ class ReviewProductInfoCard extends StatelessWidget {
           width: 80,
           child: NetworkImageWithLoader(image),
         ),
-        const SizedBox(width: defaultPadding),
+        SizedBox(width: defaultPadding),
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

@@ -35,8 +35,8 @@ class ProductDetailsScreen extends StatelessWidget {
               press: () {
                 customModalBottomSheet(
                   context,
-                  height: MediaQuery.of(context).size.height * 0.92,
                   child: ProductBuyNowScreen(),
+                  height: MediaQuery.of(context).size.height * 0.92,
                 );
               },
             )
@@ -107,12 +107,12 @@ class ProductDetailsScreen extends StatelessWidget {
                 padding: EdgeInsets.all(defaultPadding),
                 child: ReviewCard(
                   rating: 4.3,
-                  numOfReviews: 128,
-                  numOfFiveStar: 80,
-                  numOfFourStar: 30,
-                  numOfThreeStar: 5,
                   numOfTwoStar: 4,
                   numOfOneStar: 1,
+                  numOfFourStar: 30,
+                  numOfFiveStar: 80,
+                  numOfThreeStar: 5,
+                  numOfReviews: 125,
                 ),
               ),
             ),
@@ -150,19 +150,19 @@ class ProductDetailsScreen extends StatelessWidget {
                       brandName: "LIPSY LONDON",
                       price: 25,
                       priceAfterDiscount: index.isEven ? 20.99 : null,
-                      dicountpercent: index.isEven ? 25 : null,
+                      discountpercent: index.isEven ? 25 : null,
                       press: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => ProductDetailsScreen(
-                              image: productDemoImg2,
-                              title: "Sleeveless Tiered Dobby Swing Dress",
-                              price: 25,
-                              brandName: "LIPSY LONDON",
-                            ),
-                          ),
-                        );
+                        //       Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //     builder: (context) => ProductDetailsScreen(
+                        //       image: demoPopularProducts[index].image,
+                        //       title: demoPopularProducts[index].title,
+                        //       price: demoPopularProducts[index].price,
+                        //       brandName: demoPopularProducts[index].brandName,
+                        //     ),
+                        //   ),
+                        // );
                       },
                     ),
                   ),

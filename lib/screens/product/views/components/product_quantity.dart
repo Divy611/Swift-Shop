@@ -23,7 +23,7 @@ class ProductQuantity extends StatelessWidget {
           "Quantity",
           style: Theme.of(context).textTheme.titleSmall,
         ),
-        const SizedBox(height: defaultPadding),
+        SizedBox(height: defaultPadding),
         Row(
           children: [
             SizedBox(

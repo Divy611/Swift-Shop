@@ -110,7 +110,7 @@ class ProcessDotWithLine extends StatelessWidget {
                     : Theme.of(context).textTheme.bodyMedium!.color,
               ),
         ),
-        const SizedBox(height: defaultPadding / 2),
+        SizedBox(height: defaultPadding / 2),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

@@ -12,9 +12,9 @@ class CategoryModel {
 }
 
 final List<CategoryModel> demoCategoriesWithImage = [
-  CategoryModel(title: "Woman’s", image: "https://i.imgur.com/5M89G2P.png"),
-  CategoryModel(title: "Man’s", image: "https://i.imgur.com/UM3GdWg.png"),
-  CategoryModel(title: "Kid’s", image: "https://i.imgur.com/Lp0D6k5.png"),
+  CategoryModel(title: "Women", image: "https://i.imgur.com/5M89G2P.png"),
+  CategoryModel(title: "Men", image: "https://i.imgur.com/UM3GdWg.png"),
+  CategoryModel(title: "Kids", image: "https://i.imgur.com/Lp0D6k5.png"),
   CategoryModel(title: "Accessories", image: "https://i.imgur.com/3mSE5sN.png"),
 ];
 
@@ -31,7 +31,7 @@ final List<CategoryModel> demoCategories = [
     ],
   ),
   CategoryModel(
-    title: "Man’s & Woman’s",
+    title: "Men & Women",
     svgSrc: "assets/icons/Man&Woman.svg",
     subCategories: [
       CategoryModel(title: "All Clothing"),

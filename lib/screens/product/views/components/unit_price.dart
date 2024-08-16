@@ -21,7 +21,7 @@ class UnitPrice extends StatelessWidget {
           "Unit price",
           style: Theme.of(context).textTheme.titleSmall,
         ),
-        const SizedBox(height: defaultPadding / 1),
+        SizedBox(height: defaultPadding / 1),
         Text.rich(
           TextSpan(
             text: priceAfterDiscount == null

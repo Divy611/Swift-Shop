@@ -33,7 +33,7 @@ class BookmarkScreen extends StatelessWidget {
                     price: demoPopularProducts[index].price,
                     priceAfterDiscount:
                         demoPopularProducts[index].priceAfterDiscount,
-                    dicountpercent: demoPopularProducts[index].dicountpercent,
+                    discountpercent: demoPopularProducts[index].discountpercent,
                     press: () {
                       Navigator.push(
                         context,

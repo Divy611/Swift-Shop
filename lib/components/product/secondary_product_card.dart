@@ -11,18 +11,16 @@ class SecondaryProductCard extends StatelessWidget {
     required this.title,
     required this.price,
     this.priceAfterDiscount,
-    this.dicountpercent,
+    this.discountpercent,
     this.press,
     this.style,
   });
   final String image, brandName, title;
   final double price;
   final double? priceAfterDiscount;
-  final int? dicountpercent;
+  final int? discountpercent;
   final VoidCallback? press;
-
   final ButtonStyle? style;
-
   @override
   Widget build(BuildContext context) {
     return OutlinedButton(
@@ -39,7 +37,7 @@ class SecondaryProductCard extends StatelessWidget {
             child: Stack(
               children: [
                 NetworkImageWithLoader(image, radius: defaultBorderRadious),
-                if (dicountpercent != null)
+                if (discountpercent != null)
                   Positioned(
                     right: defaultPadding / 2,
                     top: defaultPadding / 2,
@@ -53,11 +51,12 @@ class SecondaryProductCard extends StatelessWidget {
                             Radius.circular(defaultBorderRadious)),
                       ),
                       child: Text(
-                        "$dicountpercent% off",
+                        "$discountpercent% off",
                         style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 10,
-                            fontWeight: FontWeight.w500),
+                          color: Colors.white,
+                          fontSize: 10,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ),
                   )

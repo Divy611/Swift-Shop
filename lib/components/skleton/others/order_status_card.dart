@@ -26,8 +26,8 @@ class OrderStatusCardSkelton extends StatelessWidget {
             (index) => const CircleSkeleton(size: 28),
           ),
         ),
-        const SizedBox(height: defaultPadding * 0.75),
-        const SizedBox(
+        SizedBox(height: defaultPadding * 0.75),
+        SizedBox(
           height: 86,
           width: double.infinity,
           child: SeconderyProductSkelton(

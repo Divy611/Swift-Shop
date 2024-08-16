@@ -51,8 +51,7 @@ class CheckboxUnderlineListTile extends StatelessWidget {
                 )
               : null,
           controlAffinity: ListTileControlAffinity.leading,
-          contentPadding:
-              const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
+          contentPadding: EdgeInsets.symmetric(horizontal: defaultPadding / 2),
         ),
         const Divider(height: 1),
       ],

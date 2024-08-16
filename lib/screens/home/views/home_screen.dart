@@ -12,7 +12,6 @@ import 'components/popular_products.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,8 +27,7 @@ class HomeScreen extends StatelessWidget {
             SliverToBoxAdapter(
               child: Column(
                 children: [
-                  // While loading use 👇
-                  // const BannerMSkelton(),‚
+                  //BannerMSkelton(),
                   BannerSStyle1(
                     title: "New \narrival",
                     subtitle: "SPECIAL OFFER",
@@ -39,7 +37,6 @@ class HomeScreen extends StatelessWidget {
                     },
                   ),
                   SizedBox(height: defaultPadding / 4),
-                  // We have 4 banner styles, all in the pro version
                 ],
               ),
             ),
@@ -48,9 +45,8 @@ class HomeScreen extends StatelessWidget {
             SliverToBoxAdapter(
               child: Column(
                 children: [
-                  const SizedBox(height: defaultPadding * 1.5),
-
-                  const SizedBox(height: defaultPadding / 4),
+                  SizedBox(height: defaultPadding * 1.5),
+                  SizedBox(height: defaultPadding / 4),
                   // While loading use 👇
                   // const BannerSSkelton(),
                   BannerSStyle5(

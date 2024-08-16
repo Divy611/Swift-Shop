@@ -4,7 +4,7 @@ class ProductModel {
   final String image, brandName, title;
   final double price;
   final double? priceAfterDiscount;
-  final int? dicountpercent;
+  final int? discountpercent;
 
   ProductModel({
     required this.image,
@@ -12,7 +12,7 @@ class ProductModel {
     required this.title,
     required this.price,
     this.priceAfterDiscount,
-    this.dicountpercent,
+    this.discountpercent,
   });
 }
 
@@ -23,7 +23,7 @@ List<ProductModel> demoPopularProducts = [
     brandName: "Lipsy london",
     price: 540,
     priceAfterDiscount: 420,
-    dicountpercent: 20,
+    discountpercent: 20,
   ),
   ProductModel(
     image: productDemoImg4,
@@ -37,7 +37,7 @@ List<ProductModel> demoPopularProducts = [
     brandName: "Lipsy london",
     price: 650.62,
     priceAfterDiscount: 390.36,
-    dicountpercent: 40,
+    discountpercent: 40,
   ),
   ProductModel(
     image: productDemoImg6,
@@ -45,7 +45,7 @@ List<ProductModel> demoPopularProducts = [
     brandName: "Lipsy london",
     price: 1264,
     priceAfterDiscount: 1200.8,
-    dicountpercent: 5,
+    discountpercent: 5,
   ),
   ProductModel(
     image: "https://i.imgur.com/tXyOMMG.png",
@@ -53,7 +53,7 @@ List<ProductModel> demoPopularProducts = [
     brandName: "Lipsy london",
     price: 650.62,
     priceAfterDiscount: 390.36,
-    dicountpercent: 40,
+    discountpercent: 40,
   ),
   ProductModel(
     image: "https://i.imgur.com/h2LqppX.png",
@@ -61,7 +61,7 @@ List<ProductModel> demoPopularProducts = [
     brandName: "Lipsy london",
     price: 1264,
     priceAfterDiscount: 1200.8,
-    dicountpercent: 5,
+    discountpercent: 5,
   ),
 ];
 List<ProductModel> demoFlashSaleProducts = [
@@ -71,7 +71,7 @@ List<ProductModel> demoFlashSaleProducts = [
     brandName: "Lipsy london",
     price: 650.62,
     priceAfterDiscount: 390.36,
-    dicountpercent: 40,
+    discountpercent: 40,
   ),
   ProductModel(
     image: productDemoImg6,
@@ -79,7 +79,7 @@ List<ProductModel> demoFlashSaleProducts = [
     brandName: "Lipsy london",
     price: 1264,
     priceAfterDiscount: 1200.8,
-    dicountpercent: 5,
+    discountpercent: 5,
   ),
   ProductModel(
     image: productDemoImg4,
@@ -87,7 +87,7 @@ List<ProductModel> demoFlashSaleProducts = [
     brandName: "Lipsy london",
     price: 800,
     priceAfterDiscount: 680,
-    dicountpercent: 15,
+    discountpercent: 15,
   ),
 ];
 List<ProductModel> demoBestSellersProducts = [
@@ -97,7 +97,7 @@ List<ProductModel> demoBestSellersProducts = [
     brandName: "Lipsy london",
     price: 650.62,
     priceAfterDiscount: 390.36,
-    dicountpercent: 40,
+    discountpercent: 40,
   ),
   ProductModel(
     image: "https://i.imgur.com/h2LqppX.png",
@@ -105,7 +105,7 @@ List<ProductModel> demoBestSellersProducts = [
     brandName: "Lipsy london",
     price: 1264,
     priceAfterDiscount: 1200.8,
-    dicountpercent: 5,
+    discountpercent: 5,
   ),
   ProductModel(
     image: productDemoImg4,
@@ -113,7 +113,7 @@ List<ProductModel> demoBestSellersProducts = [
     brandName: "Lipsy london",
     price: 800,
     priceAfterDiscount: 680,
-    dicountpercent: 15,
+    discountpercent: 15,
   ),
 ];
 List<ProductModel> kidsProducts = [
@@ -123,7 +123,7 @@ List<ProductModel> kidsProducts = [
     brandName: "Lipsy london",
     price: 650.62,
     priceAfterDiscount: 590.36,
-    dicountpercent: 24,
+    discountpercent: 24,
   ),
   ProductModel(
     image: "https://i.imgur.com/7fSxC7k.png",
@@ -143,7 +143,7 @@ List<ProductModel> kidsProducts = [
     brandName: "Lipsy london",
     price: 400,
     priceAfterDiscount: 360,
-    dicountpercent: 20,
+    discountpercent: 20,
   ),
   ProductModel(
     image: "https://i.imgur.com/8gvE5Ss.png",

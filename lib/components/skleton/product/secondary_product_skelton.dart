@@ -38,7 +38,7 @@ class SeconderyProductSkelton extends StatelessWidget {
                   ),
                   Spacer(),
                   Skeleton(),
-                  if (!isSmall) const SizedBox(height: defaultPadding / 2),
+                  if (!isSmall) SizedBox(height: defaultPadding / 2),
                   if (!isSmall) const Skeleton(),
                   Spacer(),
                   Skeleton(

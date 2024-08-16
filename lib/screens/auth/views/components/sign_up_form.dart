@@ -27,8 +27,7 @@ class SignUpForm extends StatelessWidget {
             decoration: InputDecoration(
               hintText: "Email address",
               prefixIcon: Padding(
-                padding:
-                    const EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
+                padding: EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
                 child: SvgPicture.asset(
                   "assets/icons/Message.svg",
                   height: 24,
@@ -55,8 +54,7 @@ class SignUpForm extends StatelessWidget {
             decoration: InputDecoration(
               hintText: "Password",
               prefixIcon: Padding(
-                padding:
-                    const EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
+                padding: EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
                 child: SvgPicture.asset(
                   "assets/icons/Lock.svg",
                   height: 24,

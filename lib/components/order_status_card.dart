@@ -64,12 +64,12 @@ class OrderStatusCard extends StatelessWidget {
                             child: Row(
                               children: [
                                 const Text("Order"),
-                                const SizedBox(width: defaultPadding / 2),
+                                SizedBox(width: defaultPadding / 2),
                                 Text("#$orderId"),
                               ],
                             ),
                           ),
-                          const SizedBox(height: defaultPadding / 2),
+                          SizedBox(height: defaultPadding / 2),
                           Text(
                             "Placed on $placedOn",
                             style: Theme.of(context).textTheme.titleSmall,

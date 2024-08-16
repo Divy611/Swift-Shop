@@ -1,9 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:swiftshop/components/product/product_card.dart';
-import 'package:swiftshop/models/product_model.dart';
-
 import '../../../../constants.dart';
-import '../../../../routes/route_constants.dart';
+import 'package:flutter/material.dart';
+import 'package:swiftshop/models/product_model.dart';
+import 'package:swiftshop/routes/screen_export.dart';
+import 'package:swiftshop/components/product/product_card.dart';
 
 class BestSellers extends StatelessWidget {
   const BestSellers({
@@ -15,7 +14,7 @@ class BestSellers extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: defaultPadding / 2),
+        SizedBox(height: defaultPadding / 2),
         Padding(
           padding: EdgeInsets.all(defaultPadding),
           child: Text(
@@ -45,10 +44,19 @@ class BestSellers extends StatelessWidget {
                 price: demoBestSellersProducts[index].price,
                 priceAfterDiscount:
                     demoBestSellersProducts[index].priceAfterDiscount,
-                dicountpercent: demoBestSellersProducts[index].dicountpercent,
+                discountpercent: demoBestSellersProducts[index].discountpercent,
                 press: () {
-                  Navigator.pushNamed(context, productDetailsScreenRoute,
-                      arguments: index.isEven);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ProductDetailsScreen(
+                        image: demoPopularProducts[index].image,
+                        title: demoPopularProducts[index].title,
+                        price: demoPopularProducts[index].price,
+                        brandName: demoPopularProducts[index].brandName,
+                      ),
+                    ),
+                  );
                 },
               ),
             ),

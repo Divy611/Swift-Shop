@@ -53,7 +53,7 @@ class SearchForm extends StatelessWidget {
             width: 40,
             child: Row(
               children: [
-                const SizedBox(
+                SizedBox(
                   height: 24,
                   child: VerticalDivider(width: 1),
                 ),

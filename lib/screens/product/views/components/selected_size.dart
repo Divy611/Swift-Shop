@@ -19,7 +19,7 @@ class SelectedSize extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: defaultPadding),
+        SizedBox(height: defaultPadding),
         Padding(
           padding: EdgeInsets.all(defaultPadding),
           child: Text(

@@ -1,8 +1,8 @@
+import '../../../../constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+//import 'package:swiftshop/routes/screen_export.dart';
 import 'package:swiftshop/components/product/secondary_product_card.dart';
-
-import '../../../../constants.dart';
 
 class WalletHistoryCard extends StatelessWidget {
   const WalletHistoryCard({
@@ -41,8 +41,9 @@ class WalletHistoryCard extends StatelessWidget {
               child: Text(
                 date,
                 style: TextStyle(
-                    fontSize: 12,
-                    color: Theme.of(context).textTheme.bodyMedium!.color),
+                  fontSize: 12,
+                  color: Theme.of(context).textTheme.bodyMedium!.color,
+                ),
               ),
             ),
             trailing: Text(
@@ -74,6 +75,7 @@ class WalletHistoryCard extends StatelessWidget {
                   maximumSize: Size(double.infinity, 90),
                   padding: EdgeInsets.zero,
                 ),
+                press: () {},
               ),
             ),
           ),
