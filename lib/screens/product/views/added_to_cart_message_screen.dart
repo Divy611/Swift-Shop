@@ -10,7 +10,7 @@ class AddedToCartMessageScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+          padding: EdgeInsets.symmetric(horizontal: defaultPadding),
           child: Column(
             children: [
               const Spacer(),
@@ -38,12 +38,12 @@ class AddedToCartMessageScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(context, entryPointScreenRoute);
                 },
-                child: const Text("Continue Shopping"),
+                child: Text("Continue Shopping"),
               ),
               const SizedBox(height: defaultPadding),
               ElevatedButton(
                 onPressed: () {},
-                child: const Text("Checkout"),
+                child: Text("Checkout"),
               ),
               const Spacer(),
             ],

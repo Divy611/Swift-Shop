@@ -27,7 +27,7 @@ class ReviewCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(defaultPadding),
+      padding: EdgeInsets.all(defaultPadding),
       width: double.infinity,
       decoration: BoxDecoration(
         color: Theme.of(context).textTheme.bodyLarge!.color!.withOpacity(0.035),
@@ -60,7 +60,7 @@ class ReviewCard extends StatelessWidget {
                 RatingBar.builder(
                   initialRating: rating,
                   itemSize: 20,
-                  itemPadding: const EdgeInsets.only(right: defaultPadding / 4),
+                  itemPadding: EdgeInsets.only(right: defaultPadding / 4),
                   unratedColor: Theme.of(context)
                       .textTheme
                       .bodyLarge!
@@ -121,7 +121,7 @@ class RateBar extends StatelessWidget {
           const SizedBox(width: defaultPadding / 2),
           Expanded(
             child: ClipRRect(
-              borderRadius: const BorderRadius.all(
+              borderRadius: BorderRadius.all(
                 Radius.circular(defaultBorderRadious),
               ),
               child: LinearProgressIndicator(

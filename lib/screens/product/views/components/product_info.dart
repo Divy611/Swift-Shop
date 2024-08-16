@@ -23,14 +23,14 @@ class ProductInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverPadding(
-      padding: const EdgeInsets.all(defaultPadding),
+      padding: EdgeInsets.all(defaultPadding),
       sliver: SliverToBoxAdapter(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               brand.toUpperCase(),
-              style: const TextStyle(fontWeight: FontWeight.w500),
+              style: TextStyle(fontWeight: FontWeight.w500),
             ),
             const SizedBox(height: defaultPadding / 2),
             Text(
@@ -63,7 +63,7 @@ class ProductInfo extends StatelessWidget {
             const SizedBox(height: defaultPadding / 2),
             Text(
               description,
-              style: const TextStyle(height: 1.4),
+              style: TextStyle(height: 1.4),
             ),
             const SizedBox(height: defaultPadding / 2),
           ],

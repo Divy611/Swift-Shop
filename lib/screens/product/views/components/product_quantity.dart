@@ -32,7 +32,7 @@ class ProductQuantity extends StatelessWidget {
               child: OutlinedButton(
                 onPressed: onDecrement,
                 style: OutlinedButton.styleFrom(
-                    padding: const EdgeInsets.all(defaultPadding / 2)),
+                    padding: EdgeInsets.all(defaultPadding / 2)),
                 child: SvgPicture.asset(
                   "assets/icons/Minus.svg",
                 ),
@@ -56,7 +56,7 @@ class ProductQuantity extends StatelessWidget {
               child: OutlinedButton(
                 onPressed: onIncrement,
                 style: OutlinedButton.styleFrom(
-                    padding: const EdgeInsets.all(defaultPadding / 2)),
+                    padding: EdgeInsets.all(defaultPadding / 2)),
                 child: SvgPicture.asset(
                   "assets/icons/Plus1.svg",
                 ),

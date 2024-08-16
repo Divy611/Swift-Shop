@@ -14,8 +14,8 @@ class AppTheme {
       primarySwatch: primaryMaterialColor,
       primaryColor: primaryColor,
       scaffoldBackgroundColor: Colors.white,
-      iconTheme: const IconThemeData(color: blackColor),
-      textTheme: const TextTheme(
+      iconTheme: IconThemeData(color: blackColor),
+      textTheme: TextTheme(
         bodyMedium: TextStyle(color: blackColor40),
       ),
       elevatedButtonTheme: elevatedButtonThemeData,
@@ -23,7 +23,7 @@ class AppTheme {
       outlinedButtonTheme: outlinedButtonTheme(),
       inputDecorationTheme: lightInputDecorationTheme,
       checkboxTheme: checkboxThemeData.copyWith(
-        side: const BorderSide(color: blackColor40),
+        side: BorderSide(color: blackColor40),
       ),
       appBarTheme: appBarLightTheme,
       scrollbarTheme: scrollbarThemeData,

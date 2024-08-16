@@ -27,11 +27,11 @@ class ProfileScreen extends StatelessWidget {
             },
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(
+            padding: EdgeInsets.symmetric(
                 horizontal: defaultPadding, vertical: defaultPadding * 1.5),
             child: GestureDetector(
               onTap: () {},
-              child: const AspectRatio(
+              child: AspectRatio(
                 aspectRatio: 1.8,
                 child:
                     NetworkImageWithLoader("https://i.imgur.com/dz0BBom.png"),
@@ -40,7 +40,7 @@ class ProfileScreen extends StatelessWidget {
           ),
 
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+            padding: EdgeInsets.symmetric(horizontal: defaultPadding),
             child: Text(
               "Account",
               style: Theme.of(context).textTheme.titleSmall,
@@ -87,7 +87,7 @@ class ProfileScreen extends StatelessWidget {
           ),
           const SizedBox(height: defaultPadding),
           Padding(
-            padding: const EdgeInsets.symmetric(
+            padding: EdgeInsets.symmetric(
                 horizontal: defaultPadding, vertical: defaultPadding / 2),
             child: Text(
               "Personalization",
@@ -111,7 +111,7 @@ class ProfileScreen extends StatelessWidget {
           ),
           const SizedBox(height: defaultPadding),
           Padding(
-            padding: const EdgeInsets.symmetric(
+            padding: EdgeInsets.symmetric(
                 horizontal: defaultPadding, vertical: defaultPadding / 2),
             child: Text(
               "Settings",
@@ -132,7 +132,7 @@ class ProfileScreen extends StatelessWidget {
           ),
           const SizedBox(height: defaultPadding),
           Padding(
-            padding: const EdgeInsets.symmetric(
+            padding: EdgeInsets.symmetric(
                 horizontal: defaultPadding, vertical: defaultPadding / 2),
             child: Text(
               "Help & Support",
@@ -162,12 +162,12 @@ class ProfileScreen extends StatelessWidget {
               "assets/icons/Logout.svg",
               height: 24,
               width: 24,
-              colorFilter: const ColorFilter.mode(
+              colorFilter: ColorFilter.mode(
                 errorColor,
                 BlendMode.srcIn,
               ),
             ),
-            title: const Text(
+            title: Text(
               "Log Out",
               style: TextStyle(color: errorColor, fontSize: 14, height: 1),
             ),

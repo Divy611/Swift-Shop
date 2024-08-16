@@ -25,13 +25,13 @@ class BannerLStyle1 extends StatelessWidget {
       press: press,
       children: [
         Padding(
-          padding: const EdgeInsets.all(defaultPadding),
+          padding: EdgeInsets.all(defaultPadding),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Spacer(),
               DefaultTextStyle(
-                style: const TextStyle(
+                style: TextStyle(
                   fontFamily: grandisExtendedFont,
                   fontSize: 60,
                   height: 1.2,
@@ -75,7 +75,7 @@ class BannerLStyle1 extends StatelessWidget {
               ),
               if (subtitle != null)
                 Container(
-                  padding: const EdgeInsets.symmetric(
+                  padding: EdgeInsets.symmetric(
                       horizontal: defaultPadding / 2,
                       vertical: defaultPadding / 8),
                   color: Colors.white70,
@@ -92,7 +92,7 @@ class BannerLStyle1 extends StatelessWidget {
               Text(
                 title.toUpperCase(),
                 textAlign: TextAlign.center,
-                style: const TextStyle(
+                style: TextStyle(
                   fontFamily: grandisExtendedFont,
                   fontSize: 31,
                   fontWeight: FontWeight.w900,

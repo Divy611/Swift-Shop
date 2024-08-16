@@ -43,11 +43,10 @@ class SearchForm extends StatelessWidget {
           border: secodaryOutlineInputBorder(context),
           enabledBorder: secodaryOutlineInputBorder(context),
           prefixIcon: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
+            padding: EdgeInsets.symmetric(horizontal: 10),
             child: SvgPicture.asset(
+              height: 25,
               "assets/icons/Search.svg",
-              height: 24,
-              color: Theme.of(context).iconTheme.color!.withOpacity(0.3),
             ),
           ),
           suffixIcon: SizedBox(
@@ -62,9 +61,8 @@ class SearchForm extends StatelessWidget {
                   child: IconButton(
                     onPressed: onTabFilter,
                     icon: SvgPicture.asset(
+                      height: 25,
                       "assets/icons/Filter.svg",
-                      height: 24,
-                      color: Theme.of(context).iconTheme.color,
                     ),
                   ),
                 ),

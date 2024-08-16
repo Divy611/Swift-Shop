@@ -10,13 +10,13 @@ class EmptyWalletScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Wallet"),
+        title: Text("Wallet"),
       ),
       body: SafeArea(
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(defaultPadding),
+              padding: EdgeInsets.all(defaultPadding),
               child: WalletBalanceCard(
                 balance: 384.90,
                 onTabChargeBalance: () {},

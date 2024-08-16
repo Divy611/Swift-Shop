@@ -10,16 +10,16 @@ class PreferencesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Cookie preferences"),
+        title: Text("Cookie preferences"),
         actions: [
           TextButton(
             onPressed: () {},
-            child: const Text("Reset"),
+            child: Text("Reset"),
           )
         ],
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+        padding: EdgeInsets.symmetric(vertical: defaultPadding),
         child: Column(
           children: [
             PreferencesListTile(

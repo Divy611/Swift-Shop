@@ -21,8 +21,8 @@ class WalletBalanceCard extends StatelessWidget {
           Expanded(
             child: Container(
               width: double.infinity,
-              padding: const EdgeInsets.all(defaultPadding),
-              decoration: const BoxDecoration(
+              padding: EdgeInsets.all(defaultPadding),
+              decoration: BoxDecoration(
                 color: primaryColor,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(defaultBorderRadious),
@@ -54,15 +54,15 @@ class WalletBalanceCard extends StatelessWidget {
           ElevatedButton(
             onPressed: onTabChargeBalance,
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF9581FF),
-              shape: const RoundedRectangleBorder(
+              backgroundColor: Color(0xFF9581FF),
+              shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(defaultBorderRadious),
                   bottomRight: Radius.circular(defaultBorderRadious),
                 ),
               ),
             ),
-            child: const Text("+ Charge Balance"),
+            child: Text("+ Charge Balance"),
           )
         ],
       ),

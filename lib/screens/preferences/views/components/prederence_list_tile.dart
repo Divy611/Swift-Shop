@@ -25,7 +25,7 @@ class PreferencesListTile extends StatelessWidget {
         style: Theme.of(context).textTheme.titleSmall,
       ),
       subtitle: Padding(
-        padding: const EdgeInsets.only(top: defaultPadding / 2),
+        padding: EdgeInsets.only(top: defaultPadding / 2),
         child: Text(
           subtitleTxt,
           style: Theme.of(context)

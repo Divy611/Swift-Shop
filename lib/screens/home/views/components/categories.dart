@@ -83,17 +83,17 @@ class CategoryBtn extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: press,
-      borderRadius: const BorderRadius.all(Radius.circular(30)),
+      borderRadius: BorderRadius.all(Radius.circular(30)),
       child: Container(
         height: 36,
-        padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+        padding: EdgeInsets.symmetric(horizontal: defaultPadding),
         decoration: BoxDecoration(
           color: isActive ? primaryColor : Colors.transparent,
           border: Border.all(
               color: isActive
                   ? Colors.transparent
                   : Theme.of(context).dividerColor),
-          borderRadius: const BorderRadius.all(Radius.circular(30)),
+          borderRadius: BorderRadius.all(Radius.circular(30)),
         ),
         child: Row(
           children: [

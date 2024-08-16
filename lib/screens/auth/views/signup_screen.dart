@@ -28,7 +28,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               fit: BoxFit.cover,
             ),
             Padding(
-              padding: const EdgeInsets.all(defaultPadding),
+              padding: EdgeInsets.all(defaultPadding),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -36,11 +36,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     "Let’s get started!",
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
-                  const SizedBox(height: defaultPadding / 2),
-                  const Text(
+                  SizedBox(height: defaultPadding / 2),
+                  Text(
                     "Please enter your valid data in order to create an account.",
                   ),
-                  const SizedBox(height: defaultPadding),
+                  SizedBox(height: defaultPadding),
                   SignUpForm(formKey: _formKey),
                   const SizedBox(height: defaultPadding),
                   Row(
@@ -61,7 +61,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                         context, termsOfServicesScreenRoute);
                                   },
                                 text: " Terms of service ",
-                                style: const TextStyle(
+                                style: TextStyle(
                                   color: primaryColor,
                                   fontWeight: FontWeight.w500,
                                 ),
@@ -80,17 +80,17 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     onPressed: () {
                       Navigator.pushNamed(context, entryPointScreenRoute);
                     },
-                    child: const Text("Continue"),
+                    child: Text("Continue"),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Text("Do you have an account?"),
+                      Text("Do you have an account?"),
                       TextButton(
                         onPressed: () {
                           Navigator.pushNamed(context, logInScreenRoute);
                         },
-                        child: const Text("Log in"),
+                        child: Text("Log in"),
                       )
                     ],
                   ),

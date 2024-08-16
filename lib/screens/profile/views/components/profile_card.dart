@@ -37,23 +37,23 @@ class ProfileCard extends StatelessWidget {
         children: [
           Text(
             isShowHi ? "Hi, $name" : name,
-            style: const TextStyle(fontWeight: FontWeight.w500),
+            style: TextStyle(fontWeight: FontWeight.w500),
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
           ),
           const SizedBox(width: defaultPadding / 2),
           if (isPro)
             Container(
-              padding: const EdgeInsets.symmetric(
+              padding: EdgeInsets.symmetric(
                   horizontal: defaultPadding / 2, vertical: defaultPadding / 4),
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                 color: primaryColor,
                 borderRadius:
                     BorderRadius.all(Radius.circular(defaultBorderRadious)),
               ),
               child: Text(
                 proLableText,
-                style: const TextStyle(
+                style: TextStyle(
                   fontFamily: grandisExtendedFont,
                   fontSize: 10,
                   fontWeight: FontWeight.w500,
@@ -66,12 +66,8 @@ class ProfileCard extends StatelessWidget {
         ],
       ),
       subtitle: Text(email),
-      trailing: isShowArrow
-          ? SvgPicture.asset(
-              "assets/icons/miniRight.svg",
-              color: Theme.of(context).iconTheme.color!.withOpacity(0.4),
-            )
-          : null,
+      trailing:
+          isShowArrow ? SvgPicture.asset("assets/icons/miniRight.svg") : null,
     );
   }
 }

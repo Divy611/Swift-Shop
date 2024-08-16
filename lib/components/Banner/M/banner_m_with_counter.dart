@@ -57,7 +57,7 @@ class _BannerMWithCounterState extends State<BannerMWithCounter> {
             Text(
               widget.text,
               textAlign: TextAlign.center,
-              style: const TextStyle(
+              style: TextStyle(
                 fontFamily: grandisExtendedFont,
                 fontSize: 24,
                 fontWeight: FontWeight.w500,
@@ -72,8 +72,7 @@ class _BannerMWithCounterState extends State<BannerMWithCounter> {
                   text: _duration.inHours.toString().padLeft(2, "0"),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: defaultPadding / 4),
+                  padding: EdgeInsets.symmetric(horizontal: defaultPadding / 4),
                   child: SvgPicture.asset("assets/icons/dot.svg"),
                 ),
                 BlurContainer(
@@ -83,8 +82,7 @@ class _BannerMWithCounterState extends State<BannerMWithCounter> {
                       .padLeft(2, "0"),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: defaultPadding / 4),
+                  padding: EdgeInsets.symmetric(horizontal: defaultPadding / 4),
                   child: SvgPicture.asset("assets/icons/dot.svg"),
                 ),
                 BlurContainer(

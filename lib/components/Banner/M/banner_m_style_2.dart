@@ -27,7 +27,7 @@ class BannerMStyle2 extends StatelessWidget {
       press: press,
       children: [
         Padding(
-          padding: const EdgeInsets.all(defaultPadding),
+          padding: EdgeInsets.all(defaultPadding),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -38,7 +38,7 @@ class BannerMStyle2 extends StatelessWidget {
                   children: [
                     Text(
                       title.toUpperCase(),
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontFamily: grandisExtendedFont,
                         fontSize: 28,
                         fontWeight: FontWeight.w900,
@@ -50,7 +50,7 @@ class BannerMStyle2 extends StatelessWidget {
                     if (subtitle != null)
                       Text(
                         subtitle!.toUpperCase(),
-                        style: const TextStyle(
+                        style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
                           fontSize: 12,
@@ -66,7 +66,7 @@ class BannerMStyle2 extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: press,
                   style: ElevatedButton.styleFrom(
-                    shape: const CircleBorder(),
+                    shape: CircleBorder(),
                     backgroundColor: Colors.white,
                   ),
                   child: SvgPicture.asset(

@@ -20,10 +20,9 @@ class ProductsSkelton extends StatelessWidget {
             left: defaultPadding,
             right: index == 4 ? defaultPadding : 0,
           ),
-          child: const ProductCardSkelton(),
+          child: ProductCardSkelton(),
         ),
       ),
     );
   }
 }
-

@@ -73,7 +73,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         onPressed: () {
                           Navigator.pushNamed(context, signUpScreenRoute);
                         },
-                        child: const Text("Sign up"),
+                        child: Text("Sign up"),
                       )
                     ],
                   ),

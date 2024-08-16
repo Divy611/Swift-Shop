@@ -47,7 +47,7 @@ class OrderStatusCard extends StatelessWidget {
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(defaultPadding),
+                  padding: EdgeInsets.all(defaultPadding),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -88,7 +88,7 @@ class OrderStatusCard extends StatelessWidget {
                 ),
                 const Divider(height: 1),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+                  padding: EdgeInsets.symmetric(vertical: defaultPadding),
                   child: OrderProgress(
                     orderStatus: orderStatus,
                     processingStatus: processingStatus,
@@ -99,8 +99,7 @@ class OrderStatusCard extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: defaultPadding),
+                  padding: EdgeInsets.symmetric(horizontal: defaultPadding),
                   child: Column(
                     children: products ?? [],
                   ),

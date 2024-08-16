@@ -26,7 +26,7 @@ class BannerMStyle3 extends StatelessWidget {
       press: press,
       children: [
         Padding(
-          padding: const EdgeInsets.all(defaultPadding),
+          padding: EdgeInsets.all(defaultPadding),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -36,13 +36,13 @@ class BannerMStyle3 extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      padding: const EdgeInsets.symmetric(
+                      padding: EdgeInsets.symmetric(
                           horizontal: defaultPadding / 2,
                           vertical: defaultPadding / 8),
                       color: Colors.white70,
                       child: Text(
                         "$discountParcent% off",
-                        style: const TextStyle(
+                        style: TextStyle(
                           color: Colors.black54,
                           fontWeight: FontWeight.bold,
                           fontSize: 12,
@@ -52,7 +52,7 @@ class BannerMStyle3 extends StatelessWidget {
                     const SizedBox(height: defaultPadding / 2),
                     Text(
                       title.toUpperCase(),
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontFamily: grandisExtendedFont,
                         fontSize: 28,
                         fontWeight: FontWeight.w900,
@@ -70,7 +70,7 @@ class BannerMStyle3 extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: press,
                   style: ElevatedButton.styleFrom(
-                    shape: const CircleBorder(),
+                    shape: CircleBorder(),
                     backgroundColor: Colors.white,
                   ),
                   child: SvgPicture.asset(

@@ -71,7 +71,7 @@ class DividerListTileWithTrilingText extends StatelessWidget {
           ),
           title: Text(
             title,
-            style: const TextStyle(fontSize: 14, height: 1),
+            style: TextStyle(fontSize: 14, height: 1),
           ),
           trailing: SizedBox(
             width: 50,

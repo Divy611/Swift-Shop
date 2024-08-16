@@ -43,7 +43,7 @@ const OutlineInputBorder errorOutlineInputBorder = OutlineInputBorder(
 
 OutlineInputBorder secodaryOutlineInputBorder(BuildContext context) {
   return OutlineInputBorder(
-    borderRadius: const BorderRadius.all(Radius.circular(defaultBorderRadious)),
+    borderRadius: BorderRadius.all(Radius.circular(defaultBorderRadious)),
     borderSide: BorderSide(
       color: Theme.of(context).textTheme.bodyLarge!.color!.withOpacity(0.15),
     ),

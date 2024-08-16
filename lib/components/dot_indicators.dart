@@ -24,7 +24,7 @@ class DotIndicator extends StatelessWidget {
         color: isActive
             ? activeColor
             : inActiveColor ?? primaryMaterialColor.shade100,
-        borderRadius: const BorderRadius.all(Radius.circular(defaultPadding)),
+        borderRadius: BorderRadius.all(Radius.circular(defaultPadding)),
       ),
     );
   }

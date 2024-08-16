@@ -28,10 +28,7 @@ class ProductListTile extends StatelessWidget {
               height: 24,
             ),
             title: Text(title),
-            trailing: SvgPicture.asset(
-              "assets/icons/miniRight.svg",
-              color: Theme.of(context).textTheme.bodyMedium!.color,
-            ),
+            trailing: SvgPicture.asset("assets/icons/miniRight.svg"),
           ),
           if (isShowBottomBorder) const Divider(height: 1),
         ],

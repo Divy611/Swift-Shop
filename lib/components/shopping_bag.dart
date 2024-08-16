@@ -32,7 +32,7 @@ class ShoppingBag extends StatelessWidget {
           ),
           if (numOfItem != null)
             Padding(
-              padding: const EdgeInsets.only(top: 4),
+              padding: EdgeInsets.only(top: 4),
               child: Text(
                 numOfItem!.toString(),
                 style: TextStyle(

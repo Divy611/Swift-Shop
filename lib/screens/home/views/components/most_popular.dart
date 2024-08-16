@@ -17,7 +17,7 @@ class MostPopular extends StatelessWidget {
       children: [
         const SizedBox(height: defaultPadding / 2),
         Padding(
-          padding: const EdgeInsets.all(defaultPadding),
+          padding: EdgeInsets.all(defaultPadding),
           child: Text(
             "Most popular",
             style: Theme.of(context).textTheme.titleSmall,

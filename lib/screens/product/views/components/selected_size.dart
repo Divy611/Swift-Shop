@@ -21,7 +21,7 @@ class SelectedSize extends StatelessWidget {
       children: [
         const SizedBox(height: defaultPadding),
         Padding(
-          padding: const EdgeInsets.all(defaultPadding),
+          padding: EdgeInsets.all(defaultPadding),
           child: Text(
             "Select Size",
             style: Theme.of(context).textTheme.titleSmall,
@@ -67,7 +67,7 @@ class SizeButton extends StatelessWidget {
         onPressed: press,
         style: OutlinedButton.styleFrom(
           padding: EdgeInsets.zero,
-          shape: const CircleBorder(),
+          shape: CircleBorder(),
           side: isActive ? const BorderSide(color: primaryColor) : null,
         ),
         child: Text(

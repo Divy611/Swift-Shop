@@ -149,7 +149,7 @@ Widget statusWidget(BuildContext context, OrderProcessStatus status) {
         radius: 12,
         backgroundColor: successColor,
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(8.0),
           child: CircularProgressIndicator(
             color: Theme.of(context).scaffoldBackgroundColor,
             strokeWidth: 2,
@@ -161,7 +161,7 @@ Widget statusWidget(BuildContext context, OrderProcessStatus status) {
         radius: 12,
         backgroundColor: Theme.of(context).dividerColor,
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(8.0),
           child: CircleAvatar(
             backgroundColor: Theme.of(context).scaffoldBackgroundColor,
           ),
@@ -172,7 +172,7 @@ Widget statusWidget(BuildContext context, OrderProcessStatus status) {
         radius: 12,
         backgroundColor: errorColor,
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(8.0),
           child: CircleAvatar(
             backgroundColor: Theme.of(context).scaffoldBackgroundColor,
           ),

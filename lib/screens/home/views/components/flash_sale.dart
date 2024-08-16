@@ -19,13 +19,13 @@ class FlashSale extends StatelessWidget {
         // While loading show 👇
         // const BannerMWithCounterSkelton(),
         BannerMWithCounter(
-          duration: const Duration(hours: 8),
+          duration: Duration(hours: 8),
           text: "Super Flash Sale \n50% Off",
           press: () {},
         ),
         const SizedBox(height: defaultPadding / 2),
         Padding(
-          padding: const EdgeInsets.all(defaultPadding),
+          padding: EdgeInsets.all(defaultPadding),
           child: Text(
             "Flash sale",
             style: Theme.of(context).textTheme.titleSmall,

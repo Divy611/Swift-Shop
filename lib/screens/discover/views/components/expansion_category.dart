@@ -31,10 +31,10 @@ class ExpansionCategory extends StatelessWidget {
       ),
       title: Text(
         title,
-        style: const TextStyle(fontSize: 14),
+        style: TextStyle(fontSize: 14),
       ),
       textColor: Theme.of(context).textTheme.bodyLarge!.color,
-      childrenPadding: const EdgeInsets.only(left: defaultPadding * 3.5),
+      childrenPadding: EdgeInsets.only(left: defaultPadding * 3.5),
       children: List.generate(
         subCategory.length,
         (index) => Column(
@@ -45,7 +45,7 @@ class ExpansionCategory extends StatelessWidget {
               },
               title: Text(
                 subCategory[index].title,
-                style: const TextStyle(fontSize: 14),
+                style: TextStyle(fontSize: 14),
               ),
             ),
             if (index < subCategory.length - 1) const Divider(height: 1),

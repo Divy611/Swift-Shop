@@ -21,7 +21,7 @@ class BannerMStyle1 extends StatelessWidget {
       press: press,
       children: [
         Padding(
-          padding: const EdgeInsets.all(defaultPadding),
+          padding: EdgeInsets.all(defaultPadding),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -30,7 +30,7 @@ class BannerMStyle1 extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 0.75,
                 child: Text(
                   text,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontFamily: grandisExtendedFont,
                     fontWeight: FontWeight.w600,
                     fontSize: 24,

@@ -42,7 +42,7 @@ class _EntryPointState extends State<EntryPoint> {
         // floating: true,
         // snap: true,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-        leading: const SizedBox(),
+        leading: SizedBox(),
         leadingWidth: 0,
         centerTitle: false,
         title: SvgPicture.asset(
@@ -92,10 +92,10 @@ class _EntryPointState extends State<EntryPoint> {
         child: _pages[_currentIndex],
       ),
       bottomNavigationBar: Container(
-        padding: const EdgeInsets.only(top: defaultPadding / 2),
+        padding: EdgeInsets.only(top: defaultPadding / 2),
         color: Theme.of(context).brightness == Brightness.light
             ? Colors.white
-            : const Color(0xFF101015),
+            : Color(0xFF101015),
         child: BottomNavigationBar(
           currentIndex: _currentIndex,
           onTap: (index) {
@@ -107,7 +107,7 @@ class _EntryPointState extends State<EntryPoint> {
           },
           backgroundColor: Theme.of(context).brightness == Brightness.light
               ? Colors.white
-              : const Color(0xFF101015),
+              : Color(0xFF101015),
           type: BottomNavigationBarType.fixed,
           // selectedLabelStyle: TextStyle(color: primaryColor),
           selectedFontSize: 12,

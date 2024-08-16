@@ -20,7 +20,7 @@ class DiscoverScreen extends StatelessWidget {
               child: SearchForm(),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(
+              padding: EdgeInsets.symmetric(
                   horizontal: defaultPadding, vertical: defaultPadding / 2),
               child: Text(
                 "Categories",

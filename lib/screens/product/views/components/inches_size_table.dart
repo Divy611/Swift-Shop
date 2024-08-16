@@ -19,14 +19,14 @@ class InchesSizeTable extends StatelessWidget {
                     ? Colors.black12
                     : Colors.white10),
           ),
-          columns: const <DataColumn>[
+          columns: <DataColumn>[
             DataColumn(label: Text('')),
             DataColumn(label: Text('Size')),
             DataColumn(label: Text('Bust')),
             DataColumn(label: Text('Waist')),
             DataColumn(label: Text('Hips')),
           ],
-          rows: const <DataRow>[
+          rows: <DataRow>[
             DataRow(
               cells: <DataCell>[
                 DataCell(Text('S')),

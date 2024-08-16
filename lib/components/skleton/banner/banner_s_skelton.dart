@@ -19,7 +19,7 @@ class BannerSSkelton extends StatelessWidget {
         children: [
           const Skeleton(),
           Padding(
-            padding: const EdgeInsets.all(defaultPadding),
+            padding: EdgeInsets.all(defaultPadding),
             child: Row(
               children: [
                 const Expanded(

@@ -28,7 +28,7 @@ class BannerMStyle4 extends StatelessWidget {
       press: press,
       children: [
         Padding(
-          padding: const EdgeInsets.all(defaultPadding),
+          padding: EdgeInsets.all(defaultPadding),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -39,13 +39,13 @@ class BannerMStyle4 extends StatelessWidget {
                   children: [
                     if (subtitle != null)
                       Container(
-                        padding: const EdgeInsets.symmetric(
+                        padding: EdgeInsets.symmetric(
                             horizontal: defaultPadding / 2,
                             vertical: defaultPadding / 8),
                         color: Colors.white70,
                         child: Text(
                           subtitle!,
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: Colors.black54,
                             fontWeight: FontWeight.bold,
                             fontSize: 12,
@@ -55,7 +55,7 @@ class BannerMStyle4 extends StatelessWidget {
                     const SizedBox(height: defaultPadding / 2),
                     Text(
                       title.toUpperCase(),
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontFamily: grandisExtendedFont,
                         fontSize: 28,
                         fontWeight: FontWeight.w900,
@@ -66,7 +66,7 @@ class BannerMStyle4 extends StatelessWidget {
                     // const SizedBox(height: defaultPadding / 4),
                     Text(
                       "UP TO $discountParcent% OFF",
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontFamily: grandisExtendedFont,
                         color: Colors.white,
                         fontSize: 12,
@@ -83,7 +83,7 @@ class BannerMStyle4 extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: press,
                   style: ElevatedButton.styleFrom(
-                    shape: const CircleBorder(),
+                    shape: CircleBorder(),
                     backgroundColor: Colors.white,
                   ),
                   child: SvgPicture.asset(

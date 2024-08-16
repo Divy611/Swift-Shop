@@ -49,9 +49,9 @@ class _ProductImagesState extends State<ProductImages> {
               },
               itemCount: widget.images.length,
               itemBuilder: (context, index) => Padding(
-                padding: const EdgeInsets.only(right: defaultPadding),
+                padding: EdgeInsets.only(right: defaultPadding),
                 child: ClipRRect(
-                  borderRadius: const BorderRadius.all(
+                  borderRadius: BorderRadius.all(
                     Radius.circular(defaultBorderRadious * 2),
                   ),
                   child: NetworkImageWithLoader(widget.images[index]),
@@ -64,12 +64,12 @@ class _ProductImagesState extends State<ProductImages> {
                 bottom: 24,
                 right: MediaQuery.of(context).size.width * 0.15,
                 child: Container(
-                  padding: const EdgeInsets.symmetric(
+                  padding: EdgeInsets.symmetric(
                     horizontal: defaultPadding * 0.75,
                   ),
                   decoration: BoxDecoration(
                     color: Theme.of(context).scaffoldBackgroundColor,
-                    borderRadius: const BorderRadius.all(Radius.circular(50)),
+                    borderRadius: BorderRadius.all(Radius.circular(50)),
                   ),
                   child: Row(
                     children: List.generate(

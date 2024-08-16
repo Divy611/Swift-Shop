@@ -19,14 +19,14 @@ class CartButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.symmetric(
+        padding: EdgeInsets.symmetric(
             horizontal: defaultPadding, vertical: defaultBorderRadious / 2),
         child: SizedBox(
           height: 64,
           child: Material(
             color: primaryColor,
             clipBehavior: Clip.hardEdge,
-            shape: const RoundedRectangleBorder(
+            shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(
                 Radius.circular(defaultBorderRadious),
               ),
@@ -38,8 +38,7 @@ class CartButton extends StatelessWidget {
                   Expanded(
                     flex: 4,
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: defaultPadding),
+                      padding: EdgeInsets.symmetric(horizontal: defaultPadding),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -53,7 +52,7 @@ class CartButton extends StatelessWidget {
                           ),
                           Text(
                             subTitle,
-                            style: const TextStyle(
+                            style: TextStyle(
                                 color: Colors.white54,
                                 fontWeight: FontWeight.w500),
                           )

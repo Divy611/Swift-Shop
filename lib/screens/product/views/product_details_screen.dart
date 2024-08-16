@@ -31,7 +31,7 @@ class ProductDetailsScreen extends StatelessWidget {
                 customModalBottomSheet(
                   context,
                   height: MediaQuery.of(context).size.height * 0.92,
-                  child: const ProductBuyNowScreen(),
+                  child: ProductBuyNowScreen(),
                 );
               },
             )
@@ -51,8 +51,7 @@ class ProductDetailsScreen extends StatelessWidget {
               actions: [
                 IconButton(
                   onPressed: () {},
-                  icon: SvgPicture.asset("assets/icons/Bookmark.svg",
-                      color: Theme.of(context).textTheme.bodyLarge!.color),
+                  icon: SvgPicture.asset("assets/icons/Bookmark.svg"),
                 ),
               ],
             ),
@@ -98,7 +97,7 @@ class ProductDetailsScreen extends StatelessWidget {
                 customModalBottomSheet(
                   context,
                   height: MediaQuery.of(context).size.height * 0.92,
-                  child: const ProductReturnsScreen(),
+                  child: ProductReturnsScreen(),
                 );
               },
             ),
@@ -125,7 +124,7 @@ class ProductDetailsScreen extends StatelessWidget {
               },
             ),
             SliverPadding(
-              padding: const EdgeInsets.all(defaultPadding),
+              padding: EdgeInsets.all(defaultPadding),
               sliver: SliverToBoxAdapter(
                 child: Text(
                   "You may also like",

@@ -34,7 +34,7 @@ class LocationPermissonStoreAvailabilityScreen extends StatelessWidget {
             ),
             Expanded(
               child: SingleChildScrollView(
-                padding: const EdgeInsets.all(defaultPadding),
+                padding: EdgeInsets.all(defaultPadding),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -47,14 +47,10 @@ class LocationPermissonStoreAvailabilityScreen extends StatelessWidget {
                           enabledBorder: secodaryOutlineInputBorder(context),
                           focusedBorder: secodaryOutlineInputBorder(context),
                           prefixIcon: Padding(
-                            padding: const EdgeInsets.all(defaultPadding / 2),
+                            padding: EdgeInsets.all(defaultPadding / 2),
                             child: SvgPicture.asset(
                               "assets/icons/Search.svg",
-                              height: 24,
-                              color: Theme.of(context)
-                                  .inputDecorationTheme
-                                  .hintStyle!
-                                  .color,
+                              height: 25,
                             ),
                           ),
                         ),
@@ -62,7 +58,7 @@ class LocationPermissonStoreAvailabilityScreen extends StatelessWidget {
                     ),
                     Center(
                       child: Padding(
-                        padding: const EdgeInsets.symmetric(
+                        padding: EdgeInsets.symmetric(
                             vertical: defaultPadding * 1.5),
                         child: Image.asset(
                           Theme.of(context).brightness == Brightness.light
@@ -86,7 +82,7 @@ class LocationPermissonStoreAvailabilityScreen extends StatelessWidget {
                     const SizedBox(height: defaultPadding * 1.5),
                     ElevatedButton(
                       onPressed: () {},
-                      child: const Text("Settings"),
+                      child: Text("Settings"),
                     )
                   ],
                 ),

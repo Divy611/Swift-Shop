@@ -70,7 +70,7 @@ class _OnBordingScreenState extends State<OnBordingScreen> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+          padding: EdgeInsets.symmetric(horizontal: defaultPadding),
           child: Column(
             children: [
               Align(
@@ -111,7 +111,7 @@ class _OnBordingScreenState extends State<OnBordingScreen> {
                   ...List.generate(
                     _onbordData.length,
                     (index) => Padding(
-                      padding: const EdgeInsets.only(right: defaultPadding / 4),
+                      padding: EdgeInsets.only(right: defaultPadding / 4),
                       child: DotIndicator(isActive: index == _pageIndex),
                     ),
                   ),
@@ -129,11 +129,11 @@ class _OnBordingScreenState extends State<OnBordingScreen> {
                         }
                       },
                       style: ElevatedButton.styleFrom(
-                        shape: const CircleBorder(),
+                        shape: CircleBorder(),
                       ),
                       child: SvgPicture.asset(
                         "assets/icons/Arrow - Right.svg",
-                        colorFilter: const ColorFilter.mode(
+                        colorFilter: ColorFilter.mode(
                           Colors.white,
                           BlendMode.srcIn,
                         ),

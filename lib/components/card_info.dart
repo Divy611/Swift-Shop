@@ -31,7 +31,7 @@ class CardInfo extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 color: bgColor,
-                borderRadius: const BorderRadius.all(
+                borderRadius: BorderRadius.all(
                   Radius.circular(defaultBorderRadious * 2),
                 ),
               ),
@@ -40,8 +40,7 @@ class CardInfo extends StatelessWidget {
                 children: [
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: defaultPadding),
+                      padding: EdgeInsets.symmetric(horizontal: defaultPadding),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -53,7 +52,7 @@ class CardInfo extends StatelessWidget {
                                 "assets/icons/card.svg",
                                 height: 32,
                                 width: 32,
-                                colorFilter: const ColorFilter.mode(
+                                colorFilter: ColorFilter.mode(
                                     Colors.white, BlendMode.srcIn),
                               ),
                               if (isSelected)
@@ -61,11 +60,10 @@ class CardInfo extends StatelessWidget {
                                   radius: 12,
                                   backgroundColor: Colors.white,
                                   child: Padding(
-                                    padding: const EdgeInsets.all(
-                                        defaultPadding / 4),
+                                    padding: EdgeInsets.all(defaultPadding / 4),
                                     child: SvgPicture.asset(
                                       "assets/icons/Singlecheck.svg",
-                                      colorFilter: const ColorFilter.mode(
+                                      colorFilter: ColorFilter.mode(
                                           primaryColor, BlendMode.srcIn),
                                     ),
                                   ),
@@ -75,7 +73,7 @@ class CardInfo extends StatelessWidget {
                           const Spacer(),
                           Text(
                             "**** **** **** $last4Digits",
-                            style: const TextStyle(
+                            style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500),
@@ -96,9 +94,9 @@ class CardInfo extends StatelessWidget {
                           width: double.infinity,
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(defaultPadding),
+                          padding: EdgeInsets.all(defaultPadding),
                           child: DefaultTextStyle(
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontWeight: FontWeight.w500,
                               color: Colors.white70,
                             ),
@@ -136,8 +134,8 @@ class CardInfo extends StatelessWidget {
                   hintText: "CVV",
                   counterText: "",
                   prefixIcon: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: defaultPadding * 0.75),
+                    padding:
+                        EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
                     child: SvgPicture.asset(
                       "assets/icons/CVV.svg",
                       colorFilter: ColorFilter.mode(

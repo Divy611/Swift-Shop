@@ -20,7 +20,7 @@ class SelectedColors extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.all(defaultPadding),
+          padding: EdgeInsets.all(defaultPadding),
           child: Text(
             "Select Color",
             style: Theme.of(context).textTheme.titleSmall,

@@ -18,12 +18,12 @@ class NotifyMeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.symmetric(
+        padding: EdgeInsets.symmetric(
             horizontal: defaultPadding, vertical: defaultPadding / 2),
         child: Container(
           decoration: BoxDecoration(
             color: isNotify ? primaryColor : Colors.transparent,
-            borderRadius: const BorderRadius.all(
+            borderRadius: BorderRadius.all(
               Radius.circular(defaultBorderRadious),
             ),
             border: Border.all(
@@ -37,7 +37,7 @@ class NotifyMeCard extends StatelessWidget {
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.all(defaultPadding),
+            padding: EdgeInsets.all(defaultPadding),
             child: Row(
               children: [
                 SizedBox(
@@ -48,12 +48,9 @@ class NotifyMeCard extends StatelessWidget {
                     style: OutlinedButton.styleFrom(
                       backgroundColor: primaryColor,
                       padding: EdgeInsets.zero,
-                      side: const BorderSide(color: Colors.white10),
+                      side: BorderSide(color: Colors.white10),
                     ),
-                    child: SvgPicture.asset(
-                      "assets/icons/Notification.svg",
-                      color: Colors.white,
-                    ),
+                    child: SvgPicture.asset("assets/icons/Notification.svg"),
                   ),
                 ),
                 const SizedBox(width: defaultPadding),

@@ -37,7 +37,7 @@ class WalletHistoryCard extends StatelessWidget {
             ),
             title: Text(isReturn ? "Return" : "Purchase"),
             subtitle: Padding(
-              padding: const EdgeInsets.only(top: defaultPadding / 4),
+              padding: EdgeInsets.only(top: defaultPadding / 4),
               child: Text(
                 date,
                 style: TextStyle(
@@ -60,7 +60,7 @@ class WalletHistoryCard extends StatelessWidget {
           ...List.generate(
             products.length,
             (index) => Padding(
-              padding: const EdgeInsets.only(
+              padding: EdgeInsets.only(
                   bottom: defaultPadding,
                   left: defaultPadding,
                   right: defaultPadding),
@@ -71,7 +71,7 @@ class WalletHistoryCard extends StatelessWidget {
                 price: products[index].price,
                 priceAfetDiscount: products[index].priceAfetDiscount,
                 style: ElevatedButton.styleFrom(
-                  maximumSize: const Size(double.infinity, 90),
+                  maximumSize: Size(double.infinity, 90),
                   padding: EdgeInsets.zero,
                 ),
               ),

@@ -20,7 +20,7 @@ class SeconderyProductsSkelton extends StatelessWidget {
             left: defaultPadding,
             right: index == 3 ? defaultPadding : 0,
           ),
-          child: const SeconderyProductSkelton(),
+          child: SeconderyProductSkelton(),
         ),
       ),
     );

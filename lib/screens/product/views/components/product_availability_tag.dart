@@ -13,10 +13,10 @@ class ProductAvailabilityTag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(defaultPadding / 2),
+      padding: EdgeInsets.all(defaultPadding / 2),
       decoration: BoxDecoration(
         color: isAvailable ? successColor : errorColor,
-        borderRadius: const BorderRadius.all(
+        borderRadius: BorderRadius.all(
           Radius.circular(defaultBorderRadious / 2),
         ),
       ),

@@ -37,7 +37,7 @@ class ColorDot extends StatelessWidget {
             AnimatedOpacity(
               opacity: isActive ? 1 : 0,
               duration: defaultDuration,
-              child: const CheckMark(),
+              child: CheckMark(),
             ),
           ],
         ),

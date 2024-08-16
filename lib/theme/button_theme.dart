@@ -4,11 +4,11 @@ import '../constants.dart';
 
 ElevatedButtonThemeData elevatedButtonThemeData = ElevatedButtonThemeData(
   style: ElevatedButton.styleFrom(
-    padding: const EdgeInsets.all(defaultPadding),
+    padding: EdgeInsets.all(defaultPadding),
     backgroundColor: primaryColor,
     foregroundColor: Colors.white,
-    minimumSize: const Size(double.infinity, 32),
-    shape: const RoundedRectangleBorder(
+    minimumSize: Size(double.infinity, 32),
+    shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.all(Radius.circular(defaultBorderRadious)),
     ),
   ),
@@ -18,10 +18,10 @@ OutlinedButtonThemeData outlinedButtonTheme(
     {Color borderColor = blackColor10}) {
   return OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      padding: const EdgeInsets.all(defaultPadding),
-      minimumSize: const Size(double.infinity, 32),
+      padding: EdgeInsets.all(defaultPadding),
+      minimumSize: Size(double.infinity, 32),
       side: BorderSide(width: 1.5, color: borderColor),
-      shape: const RoundedRectangleBorder(
+      shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(defaultBorderRadious)),
       ),
     ),

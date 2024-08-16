@@ -30,7 +30,7 @@ class ProfileMenuListTile extends StatelessWidget {
       ),
       title: Text(
         text,
-        style: const TextStyle(fontSize: 14, height: 1),
+        style: TextStyle(fontSize: 14, height: 1),
       ),
       press: press,
       isShowDivider: isShowDivider,

@@ -19,7 +19,7 @@ class Skeleton extends StatelessWidget {
     return Container(
       height: height,
       width: width,
-      padding: const EdgeInsets.all(defaultPadding / 2),
+      padding: EdgeInsets.all(defaultPadding / 2),
       decoration: BoxDecoration(
           color: Theme.of(context).iconTheme.color!.withOpacity(0.04 * layer),
           borderRadius: BorderRadius.all(Radius.circular(radious))),
@@ -37,7 +37,7 @@ class CircleSkeleton extends StatelessWidget {
     return Container(
       height: size,
       width: size,
-      // padding: const EdgeInsets.all(defaultPadding),
+      // padding: EdgeInsets.all(defaultPadding),
       decoration: BoxDecoration(
         // color: Theme.of(context).primaryColor.withOpacity(0.04),
         color: Theme.of(context).iconTheme.color!.withOpacity(0.04),

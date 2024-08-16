@@ -28,7 +28,7 @@ class SeconderyProductSkelton extends StatelessWidget {
           const SizedBox(width: defaultPadding / 2),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: defaultPadding / 2),
+              padding: EdgeInsets.symmetric(vertical: defaultPadding / 2),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

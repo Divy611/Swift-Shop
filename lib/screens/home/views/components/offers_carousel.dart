@@ -61,7 +61,7 @@ class _OffersCarouselState extends State<OffersCarousel> {
 
       _pageController.animateToPage(
         _selectedIndex,
-        duration: const Duration(milliseconds: 350),
+        duration: Duration(milliseconds: 350),
         curve: Curves.easeOutCubic,
       );
     });
@@ -94,7 +94,7 @@ class _OffersCarouselState extends State<OffersCarousel> {
           ),
           FittedBox(
             child: Padding(
-              padding: const EdgeInsets.all(defaultPadding),
+              padding: EdgeInsets.all(defaultPadding),
               child: SizedBox(
                 height: 16,
                 child: Row(
